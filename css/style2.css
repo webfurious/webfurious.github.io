@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+.clearfix 			{ clear: both; }
+
+/*------------------------------------*\
+  MAIN
+\*------------------------------------*/
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+
+
+#TopBar { margin: 0px; width: 100%; height: 10px; background-image: url( ../img/top_bar.jpg ); background-repeat: repeat-x; }
+
+#wrapper_body { margin: auto; width: 100%; background: #ccc; padding: 0; }
+#wrapper_header { margin: 0; width: 100%; background: #203A41; background-image: url( ../img/header_bg.jpg ); background-repeat: repeat-x; }
+#wrapper_header_content { margin: auto; max-width: 980px; width: 90%; padding 0; }
+
+#logo { max-width: 100%; height: auto; padding: 20px 10px 14px 10px; }
+
+#wrapper_main_content { margin: auto; max-width: 980px; width: 90%; background: #fff; padding: 10px 0; }
+
+#wrapper_footer { margin: auto; width:100%; background: #131b22; padding: 0; }
+#wrapper_footer_content { margin: auto; max-width: 980px; width:90%; background: #203A41#; padding: 0; color: #ccc; }
+
+/* Main Navigation */
+nav { }
+nav ul { list-style-type: none; margin: 0; padding: 0; overflow: hidden; top: 0; }
+nav li { float: left; width: 75px; }
+nav li a { display: block; color: white; text-align: center; padding: 7px 10px; text-decoration: none; }
+nav li a:hover { background-color: #ABB71E; color: #333; }
+nav .active { background-color: #ABB71E; }
+/* End Main Navigation */
+
+/* Services Section */
+#services { margin: 10px auto; padding: 10px; width: 100%; float: left;}
+#services_box { margin: auto 10px auto; width: 20%; height: 135px; background: #ccc; padding: 10px; float: left; border: 1px solid #444;}
+
+#div_bar { background: url( ../img/div_bar.jpg ); background-repeat: repeat-x; height: 5px; width: 100%; }
+
+#content { padding: 20px; }
+
+footer { padding: 5px; background: #131B22; }
