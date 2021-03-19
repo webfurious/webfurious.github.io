@@ -1,0 +1,61 @@
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+header, footer, article, section, hgroup, nav, figure, aside {display: block;}
+figure {
+	margin:0;
+	padding:0;
+}
+html {background:#fff;}
+body {
+	margin:0;
+	color:#333;
+	min-width:320px;
+	background:#fbfbfb;
+	-webkit-text-size-adjust:none;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 21px;
+}
+.inner {
+	background:#fff;
+	max-width:980px;
+	margin:0 auto;
+}
+img {border-style:none;}
+a {
+	text-decoration:none;
+}
+a:hover {text-decoration:underline;}
+input,
+textarea,
+select {
+	font:100% arial,sans-serif;
+	vertical-align:middle;
+	color:#666;
+}
+form,fieldset{
+	margin:0;
+	padding:0;
+	border:none;
+}
