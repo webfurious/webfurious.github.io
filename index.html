@@ -80,7 +80,9 @@
 	<!-- Slider Section -->
 	<div id="slider">
 		<div class="w3-content">
-			<img src="img/slider/slide01.png" alt="" />
+			<img class="slides w3-animate-fading" src="img/slider/slide01.png" alt="" />
+			<img class="slides w3-animate-fading" src="img/slider/slide02.png" alt="" />
+			<img class="slides w3-animate-fading" src="img/slider/slide03.png" alt="" />
 		</div>
 	</div>
 	<!-- End Slider Section -->
@@ -240,6 +242,24 @@
 				x.className = x.className.replace(" w3-show", "");
 			}
 		}
+		
+		<!-- Slide Show -->
+		var slideIndex = 0;
+		carousel();
+
+
+		function carousel() {
+			var i;
+			var x = document.getElementsByClassName("slides");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			slideIndex++;
+			if (slideIndex > x.length) {slideIndex = 1}
+			x[slideIndex-1].style.display = "block";
+			setTimeout(carousel, 10000); // Change image every 2 seconds
+		}
+		
 	</script>
 	
 </body>
