@@ -46,7 +46,7 @@
 			</div>
 			
 			<div class="w3-block-item w3-quarter w3-hide-small w3-hide-medium">
-				<a href="#" id="quote-btn">Get a Quote Now</a>
+				<a href="mailto: webfuriousdesigns@gmail.com" id="quote-btn">Get a Quote Now</a>
 			</div>
 			<!-- End Logo -->
 			
@@ -54,58 +54,101 @@
 		
 	</header>
 	<!-- End Header Section -->
+	
 	<!-- Main Navigation -->
 	<nav>
 		<div class="w3-container">
 			<section class="w3-content">
-				<a href="index.html">Home</a>
+				<a class="active" href="">Home</a>
 				<a href="services.html" class="w3-hide-small">Services</a>
 				<a href="portfolio.html" class="w3-hide-small">Portfolio</a>
-				<a href="contact.html" class="w3-hide-small active">Contact</a>
+				<a href="contact.html" class="w3-hide-small">Contact</a>
 				<a href="javascript:void(0)" class="w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
 			</section>
 		</div>
 	</nav>
 	
+	<!-- Mobile Navigation -->
 	<nav id="mobile-nav" class="w3-hide w3-hide-large w3-hide-medium">
-	
 		<a href="services.html">Services</a>
 		<a href="portfolio.html">Portfolio</a>
 		<a href="contact.html">Contact</a>
-	
 	</nav>
 	<!-- End Main Navigation -->
-
-	<div id="contact-info" class="w3-container clearfix">
-
+		
+	<!-- Slider Section -->
+	<div id="slider">
 		<div class="w3-content">
-			<div class="w3-half">
-				<h1>Contact Information</h1>
-        
-				<h3>Business Hours:</h3>
-				<p><b> Mon - Fri : 8:00am to 6:00pm<br>
-					Sat : 10:00am to 2:00pm<br>
-					Sunday : Closed</b></p>
-				<h3>Telephone:</h3>
-				<p><b>(815)596-0713</b></p>
-				<h3>E-mail</h3>
-				<p><a href="mailto:webfuriousdesigns@gmail.com"><b>webfuriousdesigns@gmail.com</b></a></p>
-				<h3>Facebook : </h3>
-				<p><a href="https://www.facebook.com/WebfuriousDes"><b>www.facebook.com/Webfurious-Designs</b></a></p>
-				<h3>Twitter:</h3>
-				<p><a href="http://twitter.com/Webf_Designs"><b>@Webf_Designs</b></a></p>
+			<img class="slides w3-animate-fading" src="img/slider/slide01.png" alt="" />
+			<img class="slides w3-animate-fading" src="img/slider/slide02.png" alt="" />
+			<img class="slides w3-animate-fading" src="img/slider/slide03.png" alt="" />
+			<img class="slides w3-animate-fading" src="img/slider/slide04.png" alt="" />
+		</div>
+	</div>
+	<!-- End Slider Section -->
+	
+	<!-- About Section -->
+	<div id="about" class="w3-container w3-mobile">
+	
+		<section class="w3-content">
+			<h2>Professional Services, Affordable Prices.</h2>
+			<h4>We offer creative solutions, both digital and print for your business or personal needs.</h4>
+		</section>
+		
+	</div>
+	<!-- End About Section -->
+	
+	<div class="w3-row w3-padding-32 w3-container">
+		<div class="w3-content">
+			<div class="w3-twothird">
+				<div id="main-content">
+					<h1>Why Choose Webfurious Designs?</h1>
+					<p>Our focus is narrow and our process specific. Our expertise is deep and our passion contagious. Collaboratively we embark on a short and intense journey where we infuse your project with soul and an elevated reason for being. One that transforms your project, intellectually, verbally and visually, into something that will stand out and quickly and deeply resonate with your targets from the get-go.
+					
+					We combine strategy, graphic design and website technology to create stunning and effective solutions that will help your flourishing small business grow.</p>
+					<br>
+					<h2>We understand design services can cost more than most people can afford.</h2>
+					<p>We work closely with you to ensure we create a professional solution that you can afford. If you simply want a design for a birthday card to show that special someone how much you care. We can create a design that beats store bought cards but will not beat up your pockets.</p>
+				</div>
 			</div>
 		
-			<div class="w3-half">
-				<img src="img/map.jpg" alt="" />
+			<div id="featured-services" class="w3-third w3-padding-16">
+				<h3>Featured Services</h3>
+				<p>Creative Solutions to meet your needs.</p>
+				<!-- check -->
+				<ul class="check-color">
+					<li>Logo Design</li>
+					<li>Brand Strategy</li>
+					<li>Web Design</li>
+					<li>Business Cards</li>
+					<li>Birthday Cards</li>
+					<li>Invitations</li>
+					<li>Infographics</li>
+					<li>Marketing</li>
+				</ul>
 			</div>
 			
 		</div>
-	</div> 
-
-
+		
+	</div>
+	
+	<div class="w3-container w3-content">
+	
+		<div id="quote" class="w3-card clearfix">		
+			<section class="w3-mobile w3-threequarter">
+				<h1>The quality of our work shows through because it is designed with passion.</h1>
+				<p>We're always on the look out for new projects and clients so if you've got an idea don't delay. Request a free quote today!</p>
+			</section>
+			<section class="w3-mobile">
+				<a href="mailto: webfuriousdesigns@gmail.com" id="quote-button">Get a Quote Now</a>
+			</section>
+		</div>
+	
+	</div>
+	
 	<!-- Footer -->
 	<div id="footer_top"></div>
+	
 	<footer class="w3-container">
 	
 		<div class="w3-content">
@@ -188,6 +231,24 @@
 				x.className = x.className.replace(" w3-show", "");
 			}
 		}
+		
+		<!-- Slide Show -->
+		var slideIndex = 0;
+		carousel();
+
+
+		function carousel() {
+			var i;
+			var x = document.getElementsByClassName("slides");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			slideIndex++;
+			if (slideIndex > x.length) {slideIndex = 1}
+			x[slideIndex-1].style.display = "block";
+			setTimeout(carousel, 15000); // Change image every 15 seconds
+		}
+		
 	</script>
 	
 </body>
