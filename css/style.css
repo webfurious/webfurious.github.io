@@ -227,6 +227,9 @@ footer h1 { font-size: 24px; padding: 10px 0 10px 0; color: #3e7180; text-shadow
 	#contact-info { text-align: center; }
 }
 
+/* Privacy Page */
+#privacy-info { padding-top: 20px; padding-bottom: 20px; }
+#privacy-info h1 { font-size: 32px; color: #222; text-shadow: .5px .5px 0 #fff; font-weight: 500; }
 
 
 
