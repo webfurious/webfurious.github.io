@@ -6,9 +6,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webfurious Designs</title>
-
-	<script src="js/form-render.min.js"></script>
-	<script src="js/form-builder.min.js"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script src="js/form-builder.min.js"></script>	
     
 </head>
 <!-- END Head -->
@@ -19,9 +20,13 @@
 <body>
 
 	<!-- Form Builder -->
-	<div class="build-wrap"></div>
-
-	<script> jQuery($ => { const fbTemplate = document.getElementById('build-wrap'); $(fbTemplate).formBuilder(); });</script>
+	<div id="fb-editor"></div>
+	
+	<script>
+		jQuery(function($) {
+			$(document.getElementById('fb-editor')).formBuilder();
+		});
+	</script>
 	
 </body>
 <!-- END Body -->
