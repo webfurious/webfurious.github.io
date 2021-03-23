@@ -1,0 +1,57 @@
+label{
+    display: block;
+    float: left;
+    font-weight: bold;
+    margin: 6px 12px 2px 2px;
+    padding: 0 0 2px;
+    text-transform: capitalize;
+    width: 140px;
+    text-align: right;
+}
+
+label.option{
+    float:none;
+    clear:both;
+    text-align: left;
+    color: #000;
+    margin:1px 0 0 0;
+    padding:1px;
+    font-weight: normal;
+}
+
+input, select, textarea{
+    float:left;
+}
+
+label.error{
+    width:300px;
+    float:right;
+    text-align: left;
+    margin-right:44px;
+}
+
+input.checkbox, input.radio{
+    float:none;
+    clear:both;
+}
+
+.row{
+   clear:both;
+   overflow: hidden;
+   width: 500px;
+}
+
+.checkBoxGroup, .radioButton{
+    float:left;
+}
+
+.checkBoxGroup label.error, .radioButton label.error{
+    margin:0px;
+    float:left;
+}
+
+#submit-form{
+    margin: 10px 20px 10px 173px;
+    height:32px;
+    width:100px;
+}
