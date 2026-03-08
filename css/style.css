@@ -9,15 +9,25 @@ Copyright 2021 Webfurious Designs
 
 .clearfix::after { content:""; display: table; clear: both; }
 * { -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box; }
-body { background: url( '../img/bg_2.jpg'); font-family: 'Lato', Arial, Helvetica, sans-serif; margin: 0; padding: 0; }
+
+body { 
+	background: url('../img/bg_2.jpg');
+	margin: 0; 
+	padding: 0;
+	font-family: 'Karla', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Oswald', sans-serif;
+}
 
 header { width: 100%; margin: 0px; background: url( "../img/header_bg.jpg"); }
 #top-bar { margin: auto; height: 27px; background: url( "../img/topbar_bg.png" ) no-repeat; background-size: 100% 27px; }
-
+#top-bar p { float: left; padding: 6px 10px 0 20px; margin: 0; color: #ccc; font-size: 10px; text-align: center; }
 #top-bar img { width: 18px; height: 18px; float: right; margin: 3px 10px 0 0; }
-#top-bar img:hover { width: 24px; height: 24px; }
+#top-bar img:hover { width: 19px; height: 19px; }
 
-#logo { padding-top: 20px; padding-bottom: 20px; }
+#logo { padding-top: 22px; padding-bottom: 22px; }
 #logo img { max-width: 100%; }
 
 #quote-btn { 
@@ -70,8 +80,9 @@ nav a.active {
 	display: inline-block;
 	color: #FF0;
 	text-decoration: none;
+	text-align: center;
 	text-shadow: 1px 1px #000; 
-	background: url('../img/nav/btn_active.png');
+	background: url('../img/btn_active.png');
 	width: 100px;
 	transition: 300ms all linear;
 	-o-transform: 300ms all linear;
