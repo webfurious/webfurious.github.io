@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Webfurious Designs</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/14615e9eac.js" crossorigin="anonymous"></script>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <span><i class="fas fa-phone"></i> (815) 596-0713</span>
+                <span><i class="fas fa-clock"></i> Mon-Fri 9am-6pm</span>
+            </div>
+            <div class="top-bar-right">
+                <a href="https://www.facebook.com/share/1DnqJM4wCC/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://github.com/webfurious-designs/StudioFlow"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <header class="site-header" id="site-header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo"><a href='/'><img src="img/header.png" alt="Webfurious Designs" /></a></div>
+                <nav class="nav-links">
+                    <a href='/'>Home</a>
+                    <a href='/about'>About</a>
+                    <a href='/services'>Services</a>
+                    <a href='/portfolio'>Portfolio</a>
+                    <a href='/studioflow'>StudioFlow</a>
+                    <a class='active' href='/contact'>Contact</a>
+                    <a href="mailto:webfuriousdesigns@gmail.com" class="nav-cta">Get a Quote</a>
+                </nav>
+                <button class="nav-toggle" onclick="toggleMobileNav()">&#9776;</button>
+            </div>
+        </div>
+        <div class="mobile-nav" id="mobile-nav">
+            <a href='/'>Home</a>
+            <a href='/about'>About</a>
+            <a href='/services'>Services</a>
+            <a href='/portfolio'>Portfolio</a>
+            <a href='/studioflow'>StudioFlow</a>
+            <a href='/contact'>Contact</a>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="page-hero-bg"></div>
+        <div class="container">
+            <div class="page-hero-content">
+                <div class="section-tag">Contact</div>
+                <h1>Let's talk about <span class="accent">your project.</span></h1>
+                <p>No pressure, no obligation. Just tell me what you need and I'll get back to you with a straight answer and a fair quote.</p>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding: 100px 0; background: #060910;">
+        <div class="container">
+            <div class="contact-grid reveal">
+                <div>
+<style>
+.sf-contact-wrap { max-width: 600px; margin: 3rem auto; padding: 0 1.5rem; }
+.sf-contact-wrap .sf-eyebrow { font-family: 'JetBrains Mono', 'Courier New', monospace; font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: #f6c90e; margin-bottom: 0.6rem; }
+.sf-contact-wrap h2 { font-size: 1.85rem; font-weight: 700; color: #f1f5f9; margin: 0 0 0.5rem; line-height: 1.2; }
+.sf-contact-wrap .sf-subhead { color: #94a3b8; font-size: 0.95rem; margin-bottom: 2rem; line-height: 1.6; }
+.sf-contact-form { background: #0d1421; border: 1px solid #1e2d45; border-radius: 14px; padding: 2rem; display: flex; flex-direction: column; gap: 1.25rem; }
+.sf-contact-form .sf-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.sf-contact-form .sf-field { display: flex; flex-direction: column; gap: 0.4rem; }
+.sf-contact-form label { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04em; color: #94a3b8; text-transform: uppercase; }
+.sf-contact-form input, .sf-contact-form select, .sf-contact-form textarea { background: #060910; border: 1px solid #1e2d45; border-radius: 8px; color: #f1f5f9; font-size: 0.95rem; padding: 0.65rem 0.9rem; outline: none; transition: border-color 0.2s, box-shadow 0.2s; width: 100%; box-sizing: border-box; font-family: inherit; }
+.sf-contact-form select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%2394a3b8' d='M6 8L1 3h10z'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 0.9rem center; padding-right: 2.5rem; cursor: pointer; }
+.sf-contact-form select option { background: #0d1421; color: #f1f5f9; }
+.sf-contact-form input:focus, .sf-contact-form select:focus, .sf-contact-form textarea:focus { border-color: #60a5fa; box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.12); }
+.sf-contact-form input::placeholder, .sf-contact-form textarea::placeholder { color: #334155; }
+.sf-contact-form textarea { resize: vertical; min-height: 140px; }
+.sf-contact-form .sf-submit { background: #60a5fa; color: #060910; border: none; border-radius: 8px; font-size: 0.95rem; font-weight: 700; letter-spacing: 0.02em; padding: 0.8rem 1.5rem; cursor: pointer; transition: background 0.2s, transform 0.1s; margin-top: 0.25rem; align-self: flex-start; }
+.sf-contact-form .sf-submit:hover { background: #93c5fd; }
+.sf-contact-form .sf-submit:active { transform: scale(0.98); }
+.sf-contact-form .sf-honeypot { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+@media (max-width: 520px) { .sf-contact-form .sf-row { grid-template-columns: 1fr; } .sf-contact-form { padding: 1.5rem; } }
+</style>
+<div class="sf-contact-wrap">
+  <p class="sf-eyebrow">Get in Touch</p>
+  <h2>Let's Talk</h2>
+  <p class="sf-subhead">Have a project in mind? A question about StudioFlow? Or just want to say hi — I'm all ears. I'll get back to you within one business day.</p>
+  <form class="sf-contact-form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/contact-thanks.html">
+    <input type="hidden" name="form-name" value="contact" />
+    <p class="sf-honeypot"><label>Don't fill this out: <input name="bot-field" /></label></p>
+    <div class="sf-row">
+      <div class="sf-field">
+        <label for="c-name">Your Name</label>
+        <input type="text" id="c-name" name="name" placeholder="Jane Smith" required />
+      </div>
+      <div class="sf-field">
+        <label for="c-email">Email</label>
+        <input type="email" id="c-email" name="email" placeholder="jane@example.com" required />
+      </div>
+    </div>
+    <div class="sf-field">
+      <label for="c-subject">What's this about?</label>
+      <select id="c-subject" name="subject" required>
+        <option value="" disabled selected>Select a topic</option>
+        <option value="web-design">Web Design Project</option>
+        <option value="branding">Branding / Logo</option>
+        <option value="print-design">Print Design</option>
+        <option value="studioflow">StudioFlow App</option>
+        <option value="general">General Question</option>
+        <option value="other">Something Else</option>
+      </select>
+    </div>
+    <div class="sf-field">
+      <label for="c-message">Message</label>
+      <textarea id="c-message" name="message" placeholder="Tell me a bit about what you need..." required></textarea>
+    </div>
+    <button type="submit" class="sf-submit">Send Message &rarr;</button>
+  </form>
+</div>
+                </div>
+                <div class="contact-info reveal">
+                    <h2 style="font-size:1.8rem; font-weight:800; color:#fff; margin-bottom:32px;">Other ways to reach me</h2>
+                    <div class="contact-info-items">
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon"><i class="fas fa-phone"></i></div>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>(815) 596-0713</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>webfuriousdesigns@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon"><i class="fas fa-clock"></i></div>
+                            <div>
+                                <h4>Hours</h4>
+                                <p>Monday – Friday, 9am–6pm CST</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Rockford, IL — serving clients nationwide</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-top:40px;">
+                        <h4 style="color:#fff; margin-bottom:16px; font-size:0.9rem; text-transform:uppercase; letter-spacing:1px;">Follow Along</h4>
+                        <div class="footer-social">
+                            <a href="http://youtube.com/channel/UCtINONwxOcWa2uHy2uD6KAA"><i class="fab fa-youtube"></i></a>
+                            <a href="http://twitter.com/Webfurious_Des"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/share/1DnqJM4wCC/"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://webfurious-designs.bsky.social"><i class="fas fa-cloud"></i></a>
+                            <a href="https://github.com/webfurious"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+       <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="img/header.png" alt="Webfurious Designs" />
+                    <p>Professional design services for small businesses and individuals. Affordable prices, real results. Based in Rockford, IL.</p>
+                    <div class="footer-social">
+                        <a href="https://webfurious-designs.bsky.social"><i class="fas fa-cloud"></i></a>
+                        <a href="https://github.com/webfurious-designs/StudioFlow"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="payment-icons">
+                        <img src="img/icons/payment-1.png" alt="Payment" />
+                        <img src="img/icons/payment-2.png" alt="Payment" />
+                        <img src="img/icons/payment-3.png" alt="Payment" />
+                        <img src="img/icons/payment-4.png" alt="Payment" />
+                        <img src="img/icons/payment-5.png" alt="Payment" />
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <a href='/'>Home</a>
+                    <a href='/about'>About</a>
+                    <a href='/services'>Services</a>
+                    <a href='/portfolio'>Portfolio</a>
+                    <a href='/studioflow'>StudioFlow</a>
+                    <a href='/contact'>Contact</a>
+                    <a href='/privacy'>Privacy Policy</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <a href='/services'>Graphic Design</a>
+                    <a href='/services'>Web Design</a>
+                    <a href='/services'>Print Design</a>
+                    <a href='/services'>Brand Identity</a>
+                    <a href='/studioflow'>App Development</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-phone"></i> (815) 596-0713</p>
+                    <p><i class="fas fa-envelope"></i> webfuriousdesigns@gmail.com</p>
+                    <p><i class="fas fa-clock"></i> Mon-Fri 9am-6pm</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Rockford, IL</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright &copy; 2026 Webfurious Designs — All Rights Reserved</p>
+                <div class="footer-bottom-links">
+                    <a href='/privacy'>Privacy Policy</a>
+                    <a href='/contact'>Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .contact-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 80px; align-items: start; }
+        .contact-form-wrap { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.07); border-radius: 20px; padding: 40px; }
+        .contact-form { display: flex; flex-direction: column; gap: 20px; }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .form-group { display: flex; flex-direction: column; gap: 8px; }
+        .form-group label { color: #94a3b8; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; }
+        .form-group input, .form-group select, .form-group textarea { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 12px 16px; color: #e2e8f0; font-size: 0.95rem; font-family: inherit; transition: border-color 0.2s; outline: none; }
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: rgba(96,165,250,0.4); }
+        .form-group input::placeholder, .form-group textarea::placeholder { color: #4a5568; }
+        .form-group select option { background: #111827; }
+        .form-group textarea { resize: vertical; }
+        .contact-info { padding-top: 10px; }
+        .contact-info-items { display: flex; flex-direction: column; gap: 24px; }
+        .contact-info-item { display: flex; align-items: flex-start; gap: 16px; }
+        .contact-info-icon { width: 44px; height: 44px; background: rgba(96,165,250,0.08); border: 1px solid rgba(96,165,250,0.15); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: #60a5fa; font-size: 1rem; flex-shrink: 0; }
+        .contact-info-item h4 { color: #fff; font-size: 0.9rem; margin-bottom: 4px; }
+        .contact-info-item p { color: #64748b; font-size: 0.9rem; }
+        @media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; } .form-row { grid-template-columns: 1fr; } }
+    </style>
+
+    <script>
+        function toggleMobileNav() { document.getElementById('mobile-nav').classList.toggle('open'); }
+        window.addEventListener('scroll', () => { document.getElementById('site-header').classList.toggle('scrolled', window.scrollY > 20); });
+        const observer = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }); }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+    <script src="js/theme.js"></script>
+</body>
+</html>
+

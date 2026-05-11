@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beta Feedback — StudioFlow</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/14615e9eac.js" crossorigin="anonymous"></script>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <span><i class="fas fa-phone"></i> (815) 596-0713</span>
+                <span><i class="fas fa-clock"></i> Mon-Fri 9am-6pm</span>
+            </div>
+            <div class="top-bar-right">
+                <a href="https://www.facebook.com/share/1DnqJM4wCC/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://github.com/webfurious-designs/StudioFlow"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <header class="site-header" id="site-header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo"><a href="index.html"><img src="img/header.png" alt="Webfurious Designs" /></a></div>
+                <nav class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="StudioFlow.html" class="active">StudioFlow</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="mailto:webfuriousdesigns@gmail.com" class="nav-cta">Get a Quote</a>
+                </nav>
+                <button class="nav-toggle" onclick="toggleMobileNav()">&#9776;</button>
+            </div>
+        </div>
+        <div class="mobile-nav" id="mobile-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="StudioFlow.html">StudioFlow</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="page-hero-bg"></div>
+        <div class="container">
+            <div class="page-hero-content">
+                <div class="section-tag">StudioFlow Beta</div>
+                <h1>Feedback &amp; <span class="accent">Bug Reports</span></h1>
+                <p>Help make StudioFlow better. Every report gets read — I promise.</p>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding: 80px 0; background: #060910;">
+        <div class="container">
+            <!-- ============================================================
+  BETA FEEDBACK / BUG REPORT FORM
+  Create a new page: beta-feedback.html
+  Link to it from your download page and in your beta APK readme.
+  After deploy: Dashboard > Forms > beta-feedback > Form Notifications
+  ============================================================ -->
+
+<style>
+  .sf-feedback-wrap {
+    max-width: 620px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+  }
+
+  .sf-feedback-wrap .sf-eyebrow {
+    font-family: 'JetBrains Mono', 'Courier New', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #f6c90e;
+    margin-bottom: 0.6rem;
+  }
+
+  .sf-feedback-wrap h2 {
+    font-size: 1.85rem;
+    font-weight: 700;
+    color: #f1f5f9;
+    margin: 0 0 0.5rem;
+    line-height: 1.2;
+  }
+
+  .sf-feedback-wrap .sf-subhead {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+
+  /* Type selector tabs */
+  .sf-type-tabs {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+  }
+
+  .sf-type-tabs input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .sf-type-tabs label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.45rem 0.9rem;
+    border-radius: 6px;
+    border: 1px solid #1e2d45;
+    background: #060910;
+    color: #64748b;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.18s;
+    letter-spacing: 0.02em;
+    text-transform: none;
+  }
+
+  .sf-type-tabs input[type="radio"]:checked + label {
+    background: rgba(96,165,250,0.12);
+    border-color: #60a5fa;
+    color: #60a5fa;
+  }
+
+  .sf-feedback-form {
+    background: #0d1421;
+    border: 1px solid #1e2d45;
+    border-radius: 14px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .sf-feedback-form .sf-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .sf-feedback-form .sf-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .sf-feedback-form .sf-field-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: #94a3b8;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .sf-feedback-form .sf-optional {
+    font-size: 0.72rem;
+    color: #475569;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0;
+  }
+
+  .sf-feedback-form input,
+  .sf-feedback-form select,
+  .sf-feedback-form textarea {
+    background: #060910;
+    border: 1px solid #1e2d45;
+    border-radius: 8px;
+    color: #f1f5f9;
+    font-size: 0.95rem;
+    padding: 0.65rem 0.9rem;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: inherit;
+  }
+
+  .sf-feedback-form select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%2394a3b8' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.9rem center;
+    padding-right: 2.5rem;
+    cursor: pointer;
+  }
+
+  .sf-feedback-form select option {
+    background: #0d1421;
+    color: #f1f5f9;
+  }
+
+  .sf-feedback-form input:focus,
+  .sf-feedback-form select:focus,
+  .sf-feedback-form textarea:focus {
+    border-color: #60a5fa;
+    box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.12);
+  }
+
+  .sf-feedback-form input::placeholder,
+  .sf-feedback-form textarea::placeholder {
+    color: #334155;
+  }
+
+  .sf-feedback-form textarea {
+    resize: vertical;
+    min-height: 110px;
+  }
+
+  /* Conditional field — shown/hidden via JS */
+  .sf-conditional {
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    max-height: 0;
+    opacity: 0;
+  }
+
+  .sf-conditional.sf-visible {
+    max-height: 300px;
+    opacity: 1;
+  }
+
+  /* Severity row */
+  .sf-severity {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .sf-severity input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .sf-severity-label {
+    padding: 0.35rem 0.75rem;
+    border-radius: 6px;
+    border: 1px solid #1e2d45;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s;
+    background: #060910;
+    color: #64748b;
+  }
+
+  .sf-severity input[value="low"]:checked + .sf-severity-label { border-color: #22c55e; color: #22c55e; background: rgba(34,197,94,0.1); }
+  .sf-severity input[value="medium"]:checked + .sf-severity-label { border-color: #f6c90e; color: #f6c90e; background: rgba(246,201,14,0.1); }
+  .sf-severity input[value="high"]:checked + .sf-severity-label { border-color: #f97316; color: #f97316; background: rgba(249,115,22,0.1); }
+  .sf-severity input[value="crash"]:checked + .sf-severity-label { border-color: #ef4444; color: #ef4444; background: rgba(239,68,68,0.1); }
+
+  .sf-divider {
+    border: none;
+    border-top: 1px solid #1e2d45;
+    margin: 0.25rem 0;
+  }
+
+  .sf-feedback-form .sf-submit {
+    background: #60a5fa;
+    color: #060910;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    margin-top: 0.25rem;
+    align-self: flex-start;
+  }
+
+  .sf-feedback-form .sf-submit:hover { background: #93c5fd; }
+  .sf-feedback-form .sf-submit:active { transform: scale(0.98); }
+
+  @media (max-width: 520px) {
+    .sf-feedback-form .sf-row { grid-template-columns: 1fr; }
+    .sf-feedback-form { padding: 1.5rem; }
+  }
+</style>
+
+<div class="sf-feedback-wrap">
+  <p class="sf-eyebrow">StudioFlow Beta</p>
+  <h2>Send Feedback</h2>
+  <p class="sf-subhead">Found a bug? Have a feature idea? Just want to share a thought? Everything helps. Fill out as much or as little as you like.</p>
+
+  <form
+    class="sf-feedback-form"
+    name="beta-feedback"
+    method="POST"
+    data-netlify="true"
+    action="/feedback-thanks.html"
+  >
+    <input type="hidden" name="form-name" value="beta-feedback" />
+
+    <!-- Feedback type — styled radio tabs -->
+    <div class="sf-field">
+      <span class="sf-field-label">Feedback Type</span>
+      <div class="sf-type-tabs">
+        <input type="radio" id="fb-type-bug" name="feedback_type" value="bug" />
+        <label for="fb-type-bug">🐛 Bug Report</label>
+
+        <input type="radio" id="fb-type-feature" name="feedback_type" value="feature" />
+        <label for="fb-type-feature">💡 Feature Request</label>
+
+        <input type="radio" id="fb-type-general" name="feedback_type" value="general" checked />
+        <label for="fb-type-general">💬 General Feedback</label>
+      </div>
+    </div>
+
+    <hr class="sf-divider" />
+
+    <!-- Reporter info -->
+    <div class="sf-row">
+      <div class="sf-field">
+        <label class="sf-field-label" for="fb-name">Name <span class="sf-optional">(optional)</span></label>
+        <input type="text" id="fb-name" name="name" placeholder="Jane Smith" />
+      </div>
+      <div class="sf-field">
+        <label class="sf-field-label" for="fb-email">Email <span class="sf-optional">(for follow-up)</span></label>
+        <input type="email" id="fb-email" name="email" placeholder="jane@example.com" />
+      </div>
+    </div>
+
+    <div class="sf-field">
+      <label class="sf-field-label" for="fb-summary">Summary</label>
+      <input type="text" id="fb-summary" name="summary" placeholder="One sentence: what happened or what are you suggesting?" required />
+    </div>
+
+    <div class="sf-field">
+      <label class="sf-field-label" for="fb-description">Description</label>
+      <textarea id="fb-description" name="description" placeholder="Give me the details. More is better." required></textarea>
+    </div>
+
+    <!-- Bug-only conditional fields -->
+    <div class="sf-conditional" id="sf-bug-fields">
+      <div class="sf-field" style="margin-bottom:1.25rem;">
+        <label class="sf-field-label" for="fb-steps">Steps to Reproduce <span class="sf-optional">(optional but super helpful)</span></label>
+        <textarea id="fb-steps" name="steps_to_reproduce" placeholder="1. Open the app&#10;2. Navigate to...&#10;3. Tap...&#10;4. Bug appears"></textarea>
+      </div>
+
+      <div class="sf-field">
+        <span class="sf-field-label">Severity</span>
+        <div class="sf-severity">
+          <input type="radio" id="sv-low" name="severity" value="low" />
+          <label class="sf-severity-label" for="sv-low">Low — Minor annoyance</label>
+
+          <input type="radio" id="sv-med" name="severity" value="medium" checked />
+          <label class="sf-severity-label" for="sv-med">Medium — Impacts workflow</label>
+
+          <input type="radio" id="sv-high" name="severity" value="high" />
+          <label class="sf-severity-label" for="sv-high">High — Blocks work</label>
+
+          <input type="radio" id="sv-crash" name="severity" value="crash" />
+          <label class="sf-severity-label" for="sv-crash">Crash 💥</label>
+        </div>
+      </div>
+    </div>
+
+    <hr class="sf-divider" />
+
+    <!-- Device info -->
+    <div class="sf-row">
+      <div class="sf-field">
+        <label class="sf-field-label" for="fb-android">Android Version</label>
+        <select id="fb-android" name="android_version">
+          <option value="" disabled selected>Select version</option>
+          <option value="android-15">Android 16</option>
+          <option value="android-15">Android 15</option>
+          <option value="android-14">Android 14</option>
+          <option value="android-13">Android 13</option>
+          <option value="android-12">Android 12</option>
+          <option value="android-11">Android 11</option>
+          <option value="android-10">Android 10</option>
+          <option value="android-9">Android 9</option>
+        </select>
+      </div>
+      <div class="sf-field">
+        <label class="sf-field-label" for="fb-appver">App Version <span class="sf-optional">(from Settings)</span></label>
+        <input type="text" id="fb-appver" name="app_version" placeholder="e.g. 1.0.0-beta" />
+      </div>
+    </div>
+
+    <button type="submit" class="sf-submit">Submit Feedback →</button>
+  </form>
+</div>
+
+<script>
+  // Show/hide bug-only fields based on feedback type selection
+  const bugFields = document.getElementById('sf-bug-fields');
+  const typeRadios = document.querySelectorAll('input[name="feedback_type"]');
+
+  function updateBugFields() {
+    const selectedType = document.querySelector('input[name="feedback_type"]:checked')?.value;
+    if (selectedType === 'bug') {
+      bugFields.classList.add('sf-visible');
+    } else {
+      bugFields.classList.remove('sf-visible');
+    }
+  }
+
+  typeRadios.forEach(radio => radio.addEventListener('change', updateBugFields));
+  updateBugFields(); // run on load
+</script>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="img/header.png" alt="Webfurious Designs" />
+                    <p>Professional design services for small businesses and individuals. Affordable prices, real results. Based in Rockford, IL.</p>
+                    <div class="footer-social">
+                        <a href="https://webfurious-designs.bsky.social"><i class="fas fa-cloud"></i></a>
+                        <a href="https://github.com/webfurious-designs/StudioFlow"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="payment-icons">
+                        <img src="img/icons/payment-1.png" alt="Payment" />
+                        <img src="img/icons/payment-2.png" alt="Payment" />
+                        <img src="img/icons/payment-3.png" alt="Payment" />
+                        <img src="img/icons/payment-4.png" alt="Payment" />
+                        <img src="img/icons/payment-5.png" alt="Payment" />
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="StudioFlow.html">StudioFlow</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <a href="services.html">Graphic Design</a>
+                    <a href="services.html">Web Design</a>
+                    <a href="services.html">Print Design</a>
+                    <a href="services.html">Brand Identity</a>
+                    <a href="StudioFlow.html">App Development</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-phone"></i> (815) 596-0713</p>
+                    <p><i class="fas fa-envelope"></i> webfuriousdesigns@gmail.com</p>
+                    <p><i class="fas fa-clock"></i> Mon-Fri 9am-6pm</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Rockford, IL</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright &copy; 2026 Webfurious Designs — All Rights Reserved</p>
+                <div class="footer-bottom-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileNav() { document.getElementById('mobile-nav').classList.toggle('open'); }
+        window.addEventListener('scroll', () => { document.getElementById('site-header').classList.toggle('scrolled', window.scrollY > 20); });
+        const observer = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }); }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+    <script src="js/theme.js"></script>
+</body>
+</html>
