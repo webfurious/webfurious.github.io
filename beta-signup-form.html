@@ -1,0 +1,220 @@
+<!-- ============================================================
+  BETA SIGNUP FORM
+  Drop into: download.html (or wherever your beta CTA lives)
+  Netlify will detect this form at build time automatically.
+  After deploy: Dashboard > Forms > beta-signup > Form Notifications
+  ============================================================ -->
+
+<style>
+  /* Scoped to .sf-form so it won't conflict with your existing CSS */
+  .sf-form-wrap {
+    max-width: 560px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+  }
+
+  .sf-form-wrap .sf-eyebrow {
+    font-family: 'JetBrains Mono', 'Courier New', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #f6c90e;
+    margin-bottom: 0.6rem;
+  }
+
+  .sf-form-wrap h2 {
+    font-size: 1.85rem;
+    font-weight: 700;
+    color: #f1f5f9;
+    margin: 0 0 0.5rem;
+    line-height: 1.2;
+  }
+
+  .sf-form-wrap .sf-subhead {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+
+  .sf-form {
+    background: #0d1421;
+    border: 1px solid #1e2d45;
+    border-radius: 14px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .sf-form .sf-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .sf-form .sf-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .sf-form label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: #94a3b8;
+    text-transform: uppercase;
+  }
+
+  .sf-form input,
+  .sf-form select,
+  .sf-form textarea {
+    background: #060910;
+    border: 1px solid #1e2d45;
+    border-radius: 8px;
+    color: #f1f5f9;
+    font-size: 0.95rem;
+    padding: 0.65rem 0.9rem;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: inherit;
+  }
+
+  .sf-form select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%2394a3b8' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.9rem center;
+    padding-right: 2.5rem;
+    cursor: pointer;
+  }
+
+  .sf-form select option {
+    background: #0d1421;
+    color: #f1f5f9;
+  }
+
+  .sf-form input:focus,
+  .sf-form select:focus,
+  .sf-form textarea:focus {
+    border-color: #60a5fa;
+    box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.12);
+  }
+
+  .sf-form input::placeholder,
+  .sf-form textarea::placeholder {
+    color: #334155;
+  }
+
+  .sf-form textarea {
+    resize: vertical;
+    min-height: 90px;
+  }
+
+  .sf-form .sf-note {
+    font-size: 0.78rem;
+    color: #475569;
+    line-height: 1.5;
+  }
+
+  .sf-form .sf-submit {
+    background: #60a5fa;
+    color: #060910;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    margin-top: 0.25rem;
+    align-self: flex-start;
+  }
+
+  .sf-form .sf-submit:hover {
+    background: #93c5fd;
+  }
+
+  .sf-form .sf-submit:active {
+    transform: scale(0.98);
+  }
+
+  @media (max-width: 520px) {
+    .sf-form .sf-row {
+      grid-template-columns: 1fr;
+    }
+    .sf-form {
+      padding: 1.5rem;
+    }
+  }
+</style>
+
+<div class="sf-form-wrap">
+  <p class="sf-eyebrow">Early Access</p>
+  <h2>Join the Beta</h2>
+  <p class="sf-subhead">Be one of the first to put StudioFlow through its paces. Your feedback directly shapes the 1.0 release.</p>
+
+  <form
+    class="sf-form"
+    name="beta-signup"
+    method="POST"
+    data-netlify="true"
+    action="/beta-thanks.html"
+  >
+    <!-- Netlify hidden field — required -->
+    <input type="hidden" name="form-name" value="beta-signup" />
+
+    <div class="sf-row">
+      <div class="sf-field">
+        <label for="bs-name">Full Name</label>
+        <input type="text" id="bs-name" name="name" placeholder="Jane Smith" required />
+      </div>
+      <div class="sf-field">
+        <label for="bs-email">Email</label>
+        <input type="email" id="bs-email" name="email" placeholder="jane@example.com" required />
+      </div>
+    </div>
+
+    <div class="sf-row">
+      <div class="sf-field">
+        <label for="bs-android">Android Version</label>
+        <select id="bs-android" name="android_version" required>
+          <option value="" disabled selected>Select version</option>
+          <option value="android-15">Android 15</option>
+          <option value="android-14">Android 14</option>
+          <option value="android-13">Android 13</option>
+          <option value="android-12">Android 12</option>
+          <option value="android-11">Android 11</option>
+          <option value="android-10">Android 10</option>
+          <option value="android-9">Android 9 (Pie)</option>
+        </select>
+      </div>
+      <div class="sf-field">
+        <label for="bs-device">Device Model <span style="color:#475569;font-weight:400;">(optional)</span></label>
+        <input type="text" id="bs-device" name="device_model" placeholder="e.g. Pixel 8, Galaxy S24" />
+      </div>
+    </div>
+
+    <div class="sf-field">
+      <label for="bs-source">How did you hear about StudioFlow?</label>
+      <select id="bs-source" name="referral_source">
+        <option value="" disabled selected>Pick one</option>
+        <option value="reddit">Reddit</option>
+        <option value="facebook">Facebook</option>
+        <option value="twitter">Twitter / X</option>
+        <option value="instagram">Instagram</option>
+        <option value="friend">Friend or colleague</option>
+        <option value="google">Google search</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <p class="sf-note">No spam — ever. Just the APK download link, release notes, and an occasional question about your experience.</p>
+
+    <button type="submit" class="sf-submit">Request Beta Access →</button>
+  </form>
+</div>

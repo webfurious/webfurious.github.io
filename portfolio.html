@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio — Webfurious Designs</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/14615e9eac.js" crossorigin="anonymous"></script>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <span><i class="fas fa-phone"></i> (815) 596-0713</span>
+                <span><i class="fas fa-clock"></i> Mon-Fri 9am-6pm</span>
+            </div>
+            <div class="top-bar-right">
+                <a href="https://www.facebook.com/share/1DnqJM4wCC/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://github.com/webfurious-designs/StudioFlow"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <header class="site-header" id="site-header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo"><a href="index.html"><img src="img/header.png" alt="Webfurious Designs" /></a></div>
+                <nav class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="portfolio.html" class="active">Portfolio</a>
+                    <a href="StudioFlow.html">StudioFlow</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="mailto:webfuriousdesigns@gmail.com" class="nav-cta">Get a Quote</a>
+                </nav>
+                <button class="nav-toggle" onclick="toggleMobileNav()">&#9776;</button>
+            </div>
+        </div>
+        <div class="mobile-nav" id="mobile-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="StudioFlow.html">StudioFlow</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="page-hero-bg"></div>
+        <div class="container">
+            <div class="page-hero-content">
+                <div class="section-tag">Portfolio</div>
+                <h1>20+ years of <span class="accent">work that holds up.</span></h1>
+                <p>A selection of projects across graphic design, web design, print, and branding. Click any image to see it full size.</p>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding: 80px 0; background: #060910;">
+        <div class="container">
+            <div class="portfolio-full-grid reveal">
+                <div class="portfolio-item" onclick="openModal('pm01')">
+                    <img src="img/portfolio/01.jpg" alt="Portfolio" />
+                    <div class="portfolio-overlay"><div class="portfolio-overlay-text">View Full Size <i class="fas fa-expand"></i></div></div>
+                </div>
+                <div class="portfolio-item" onclick="openModal('pm02')">
+                    <img src="img/portfolio/02.jpg" alt="Portfolio" />
+                    <div class="portfolio-overlay"><div class="portfolio-overlay-text">View Full Size <i class="fas fa-expand"></i></div></div>
+                </div>
+                <div class="portfolio-item" onclick="openModal('pm03')">
+                    <img src="img/portfolio/03.jpg" alt="Portfolio" />
+                    <div class="portfolio-overlay"><div class="portfolio-overlay-text">View Full Size <i class="fas fa-expand"></i></div></div>
+                </div>
+                <div class="portfolio-item" onclick="openModal('pm04')">
+                    <img src="img/portfolio/04.jpg" alt="Portfolio" />
+                    <div class="portfolio-overlay"><div class="portfolio-overlay-text">View Full Size <i class="fas fa-expand"></i></div></div>
+                </div>
+                <div class="portfolio-item" onclick="openModal('pm05')">
+                    <img src="img/portfolio/05.jpg" alt="Portfolio" />
+                    <div class="portfolio-overlay"><div class="portfolio-overlay-text">View Full Size <i class="fas fa-expand"></i></div></div>
+                </div>
+                <div class="portfolio-item" onclick="openModal('pm06')">
+                    <img src="img/portfolio/06.jpg" alt="Portfolio" />
+                    <div class="portfolio-overlay"><div class="portfolio-overlay-text">View Full Size <i class="fas fa-expand"></i></div></div>
+                </div>
+                <div class="portfolio-item" onclick="openModal('pm07')">
+                    <img src="img/portfolio/07.jpg" alt="Portfolio" />
+                    <div class="portfolio-overlay"><div class="portfolio-overlay-text">View Full Size <i class="fas fa-expand"></i></div></div>
+                </div>
+                <div class="portfolio-item" onclick="openModal('pm08')">
+                    <img src="img/portfolio/08.jpg" alt="Portfolio" />
+                    <div class="portfolio-overlay"><div class="portfolio-overlay-text">View Full Size <i class="fas fa-expand"></i></div></div>
+                </div>
+                <div class="portfolio-item" onclick="openModal('pm09')">
+                    <img src="img/portfolio/09.jpg" alt="Portfolio" />
+                    <div class="portfolio-overlay"><div class="portfolio-overlay-text">View Full Size <i class="fas fa-expand"></i></div></div>
+                </div>
+                <div class="portfolio-item" onclick="openModal('pm10')">
+                    <img src="img/portfolio/10.jpg" alt="Portfolio" />
+                    <div class="portfolio-overlay"><div class="portfolio-overlay-text">View Full Size <i class="fas fa-expand"></i></div></div>
+                </div>
+                <div class="portfolio-item" onclick="openModal('pm11')">
+                    <img src="img/portfolio/11.jpg" alt="Portfolio" />
+                    <div class="portfolio-overlay"><div class="portfolio-overlay-text">View Full Size <i class="fas fa-expand"></i></div></div>
+                </div>
+                <div class="portfolio-item" onclick="openModal('pm12')">
+                    <img src="img/portfolio/12.jpg" alt="Portfolio" />
+                    <div class="portfolio-overlay"><div class="portfolio-overlay-text">View Full Size <i class="fas fa-expand"></i></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals -->
+    <div id="pm01" class="modal" onclick="closeModal(this)"><img src="img/portfolio/01.jpg" alt="" /></div>
+    <div id="pm02" class="modal" onclick="closeModal(this)"><img src="img/portfolio/02.jpg" alt="" /></div>
+    <div id="pm03" class="modal" onclick="closeModal(this)"><img src="img/portfolio/03.jpg" alt="" /></div>
+    <div id="pm04" class="modal" onclick="closeModal(this)"><img src="img/portfolio/04.jpg" alt="" /></div>
+    <div id="pm05" class="modal" onclick="closeModal(this)"><img src="img/portfolio/05.jpg" alt="" /></div>
+    <div id="pm06" class="modal" onclick="closeModal(this)"><img src="img/portfolio/06.jpg" alt="" /></div>
+    <div id="pm07" class="modal" onclick="closeModal(this)"><img src="img/portfolio/07.jpg" alt="" /></div>
+    <div id="pm08" class="modal" onclick="closeModal(this)"><img src="img/portfolio/08.jpg" alt="" /></div>
+    <div id="pm09" class="modal" onclick="closeModal(this)"><img src="img/portfolio/09.jpg" alt="" /></div>
+    <div id="pm10" class="modal" onclick="closeModal(this)"><img src="img/portfolio/10.jpg" alt="" /></div>
+    <div id="pm11" class="modal" onclick="closeModal(this)"><img src="img/portfolio/11.jpg" alt="" /></div>
+    <div id="pm12" class="modal" onclick="closeModal(this)"><img src="img/portfolio/12.jpg" alt="" /></div>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-inner reveal">
+                <h2>Like what you see?</h2>
+                <p>Let's talk about what I can build for you. Free quote, zero pressure.</p>
+                <div class="cta-buttons">
+                    <a href="mailto:webfuriousdesigns@gmail.com" class="btn-primary"><i class="fas fa-paper-plane"></i> Get a Free Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="img/header.png" alt="Webfurious Designs" />
+                    <p>Professional design services for small businesses and individuals. Affordable prices, real results. Based in Rockford, IL.</p>
+                    <div class="footer-social">
+                        <a href="https://webfurious-designs.bsky.social"><i class="fas fa-cloud"></i></a>
+                        <a href="https://github.com/webfurious-designs/StudioFlow"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="payment-icons">
+                        <img src="img/icons/payment-1.png" alt="Payment" />
+                        <img src="img/icons/payment-2.png" alt="Payment" />
+                        <img src="img/icons/payment-3.png" alt="Payment" />
+                        <img src="img/icons/payment-4.png" alt="Payment" />
+                        <img src="img/icons/payment-5.png" alt="Payment" />
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="StudioFlow.html">StudioFlow</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <a href="services.html">Graphic Design</a>
+                    <a href="services.html">Web Design</a>
+                    <a href="services.html">Print Design</a>
+                    <a href="services.html">Brand Identity</a>
+                    <a href="StudioFlow.html">App Development</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-phone"></i> (815) 596-0713</p>
+                    <p><i class="fas fa-envelope"></i> webfuriousdesigns@gmail.com</p>
+                    <p><i class="fas fa-clock"></i> Mon-Fri 9am-6pm</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Rockford, IL</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright &copy; 2026 Webfurious Designs — All Rights Reserved</p>
+                <div class="footer-bottom-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .portfolio-full-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+        .portfolio-item { position: relative; border-radius: 16px; overflow: hidden; border: 1px solid rgba(255,255,255,0.06); cursor: pointer; aspect-ratio: 4/3; }
+        .portfolio-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
+        .portfolio-item:hover img { transform: scale(1.05); }
+        .portfolio-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 60%); opacity: 0; transition: opacity 0.3s ease; display: flex; align-items: flex-end; padding: 20px; }
+        .portfolio-item:hover .portfolio-overlay { opacity: 1; }
+        .portfolio-overlay-text { color: #fff; font-weight: 600; font-size: 0.95rem; }
+        @media (max-width: 768px) { .portfolio-full-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 480px) { .portfolio-full-grid { grid-template-columns: 1fr; } }
+    </style>
+
+    <script>
+        function toggleMobileNav() { document.getElementById('mobile-nav').classList.toggle('open'); }
+        window.addEventListener('scroll', () => { document.getElementById('site-header').classList.toggle('scrolled', window.scrollY > 20); });
+        const observer = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }); }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+        function openModal(id) { document.getElementById(id).classList.add('open'); document.body.style.overflow = 'hidden'; }
+        function closeModal(el) { el.classList.remove('open'); document.body.style.overflow = ''; }
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') { document.querySelectorAll('.modal.open').forEach(m => { m.classList.remove('open'); document.body.style.overflow = ''; }); } });
+    </script>
+    <script src="js/theme.js"></script>
+</body>
+</html>

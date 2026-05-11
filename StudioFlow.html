@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="StudioFlow — The business management app built for freelancers. Manage clients, track projects, log billable hours, and send invoices from your phone.">
+    <title>StudioFlow — Webfurious Designs</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/14615e9eac.js" crossorigin="anonymous"></script>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body style="background: #060910;">
+
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <span><i class="fas fa-phone"></i> (815) 596-0713</span>
+                <span><i class="fas fa-clock"></i> Mon-Fri 9am-6pm</span>
+            </div>
+            <div class="top-bar-right">
+                <a href="https://www.facebook.com/share/1DnqJM4wCC/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://github.com/webfurious-designs/StudioFlow"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <header class="site-header" id="site-header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo"><a href="index.html"><img src="img/header.png" alt="Webfurious Designs" /></a></div>
+                <nav class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="StudioFlow.html" class="active">StudioFlow</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="mailto:webfuriousdesigns@gmail.com" class="nav-cta">Get a Quote</a>
+                </nav>
+                <button class="nav-toggle" onclick="toggleMobileNav()">&#9776;</button>
+            </div>
+        </div>
+        <div class="mobile-nav" id="mobile-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="StudioFlow.html">StudioFlow</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+
+    <!-- StudioFlow Content -->
+    <div style="max-width: 1100px; margin: 0 auto; padding: 40px 20px;">
+
+        <section id="studioflow" style="padding: 60px 20px; max-width: 1000px; margin: 0 auto; font-family: inherit; color: #e2e8f0;">
+
+          <!-- Hero -->
+          <div style="text-align: center; margin-bottom: 80px; position: relative; z-index: 1;">
+            <img style="width: 240px; height: auto; margin:auto; margin-bottom: 20px; filter: drop-shadow(0 0 15px rgba(255,255,255,0.1));" src="screenshots/StudioFlow_Logo.png" alt="StudioFlow Logo" />
+            <h1 style="font-size: 3rem; font-weight: 800; color: #fff; margin-bottom: 15px; letter-spacing: -1px;">Organize your business.<br><span style="color: #60a5fa;">Make more bank.</span></h1>
+            <p style="font-size: 1.25rem; max-width: 700px; margin: 0 auto 30px; line-height: 1.6; color: #94a3b8;">
+              Built by a freelancer who got tired of bloated, overpriced business apps. StudioFlow gives you everything you need to run your freelance business — right from your phone. No ads. No corporate nonsense. Just tools that work.
+            </p>
+            <div style="display: inline-block; padding: 6px 16px; background: rgba(59, 130, 246, 0.1); border: 1px solid rgba(59, 130, 246, 0.3); border-radius: 99px; color: #60a5fa; font-size: 0.85rem; font-weight: 600; text-transform: uppercase;">
+              🚀 Beta Launching Mid-2026 &bull; Android
+            </div>
+          </div>
+
+          <!-- Features -->
+          <div style="margin-bottom: 100px;">
+            <h2 style="text-align: center; font-size: 2.2rem; font-weight: 800; margin-bottom: 50px; color: #fff; letter-spacing: -0.5px;">Everything You Need. <span style="color: #60a5fa;">Nothing You Don't.</span></h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px;">
+
+              <div class="feature-card" style="padding: 30px; border-radius: 20px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); backdrop-filter: blur(10px); transition: all 0.3s ease;">
+                <div style="font-size: 2.5rem; margin-bottom: 15px;">👥</div>
+                <h4 style="margin: 0 0 12px; color: #fff; font-size: 1.25rem;">Client Management</h4>
+                <p style="font-size: 0.95rem; margin: 0; line-height: 1.6; color: #a0aec0;">All your clients in one place. Contact info, project history, notes — everything you need before you pick up the phone.</p>
+              </div>
+
+              <div class="feature-card" style="padding: 30px; border-radius: 20px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); backdrop-filter: blur(10px); transition: all 0.3s ease;">
+                <div style="font-size: 2.5rem; margin-bottom: 15px;">📁</div>
+                <h4 style="margin: 0 0 12px; color: #fff; font-size: 1.25rem;">Project Tracking</h4>
+                <p style="font-size: 0.95rem; margin: 0; line-height: 1.6; color: #a0aec0;">See every project at a glance. Know what's due, what's overdue, and what needs attention right now. No more dropped balls.</p>
+              </div>
+
+              <div class="feature-card" style="padding: 30px; border-radius: 20px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); backdrop-filter: blur(10px); transition: all 0.3s ease;">
+                <div style="font-size: 2.5rem; margin-bottom: 15px;">⏱️</div>
+                <h4 style="margin: 0 0 12px; color: #fff; font-size: 1.25rem;">Time Tracking</h4>
+                <p style="font-size: 0.95rem; margin: 0; line-height: 1.6; color: #a0aec0;">Hit start when you work, stop when you're done. StudioFlow calculates your billable hours and ties them directly to your invoice. Every minute counts.</p>
+              </div>
+
+              <div class="feature-card" style="padding: 30px; border-radius: 20px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); backdrop-filter: blur(10px); transition: all 0.3s ease;">
+                <div style="font-size: 2.5rem; margin-bottom: 15px;">💰</div>
+                <h4 style="margin: 0 0 12px; color: #fff; font-size: 1.25rem;">Financial Overview</h4>
+                <p style="font-size: 0.95rem; margin: 0; line-height: 1.6; color: #a0aec0;">Income from paid invoices, expenses tracked, net profit calculated automatically. Know exactly where your money is going without opening a spreadsheet.</p>
+              </div>
+
+              <div class="feature-card" style="padding: 30px; border-radius: 20px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); backdrop-filter: blur(10px); transition: all 0.3s ease;">
+                <div style="font-size: 2.5rem; margin-bottom: 15px;">🧾</div>
+                <h4 style="margin: 0 0 12px; color: #fff; font-size: 1.25rem;">Invoicing</h4>
+                <p style="font-size: 0.95rem; margin: 0; line-height: 1.6; color: #a0aec0;">Create invoices in seconds. Import your tracked hours with one tap. See what's paid, what's pending, and who owes you money — all in one screen.</p>
+              </div>
+
+              <div class="feature-card" style="padding: 30px; border-radius: 20px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); backdrop-filter: blur(10px); transition: all 0.3s ease;">
+                <div style="font-size: 2.5rem; margin-bottom: 15px;">✅</div>
+                <h4 style="margin: 0 0 12px; color: #fff; font-size: 1.25rem;">Task Management</h4>
+                <p style="font-size: 0.95rem; margin: 0; line-height: 1.6; color: #a0aec0;">Break projects into tasks, set reminders, and actually stay on top of your to-do list. Get notified before deadlines sneak up on you.</p>
+              </div>
+
+            </div>
+          </div>
+
+          <style>
+            .feature-card:hover {
+              transform: translateY(-5px);
+              background: rgba(255,255,255,0.06) !important;
+              border-color: rgba(96,165,250,0.4) !important;
+              box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5);
+            }
+          </style>
+
+          <!-- Screenshots -->
+          <div style="margin-bottom: 80px; text-align: center;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 10px; color: #fff;">See It In Action</h2>
+            <p style="color: #a0aec0; margin-bottom: 40px;">Click any screenshot to see it full size.</p>
+            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; padding: 20px 0;">
+
+              <div class="screenshot-thumb" onclick="openLightbox('screenshots/Screenshot1.jpg')" style="width: 190px; border-radius: 20px; overflow: hidden; border: 3px solid #2d3748; box-shadow: 0 15px 25px rgba(0,0,0,0.4); transform: rotate(-3deg); cursor: pointer; transition: all 0.3s ease;">
+                <img style="width: 100%; display: block;" src="screenshots/Screenshot1.jpg" alt="StudioFlow Screenshot" />
+              </div>
+
+              <div class="screenshot-thumb" onclick="openLightbox('screenshots/Screenshot3.jpg')" style="width: 190px; border-radius: 20px; overflow: hidden; border: 3px solid #2d3748; box-shadow: 0 15px 25px rgba(0,0,0,0.4); transform: translateY(-15px); cursor: pointer; transition: all 0.3s ease;">
+                <img style="width: 100%; display: block;" src="screenshots/Screenshot3.jpg" alt="StudioFlow Screenshot" />
+              </div>
+
+              <div class="screenshot-thumb" onclick="openLightbox('screenshots/Screenshot4.jpg')" style="width: 190px; border-radius: 20px; overflow: hidden; border: 3px solid #2d3748; box-shadow: 0 15px 25px rgba(0,0,0,0.4); transform: translateY(-15px); cursor: pointer; transition: all 0.3s ease;">
+                <img style="width: 100%; display: block;" src="screenshots/Screenshot4.jpg" alt="StudioFlow Screenshot" />
+              </div>
+
+              <div class="screenshot-thumb" onclick="openLightbox('screenshots/Screenshot5.jpg')" style="width: 190px; border-radius: 20px; overflow: hidden; border: 3px solid #2d3748; box-shadow: 0 15px 25px rgba(0,0,0,0.4); transform: rotate(3deg); cursor : pointer; transition: all 0.3s ease;">
+                <img style="width: 100%; display: block;" src="screenshots/Screenshot5.jpg" alt="StudioFlow Screenshot" />
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Lightbox -->
+          <div id="lightbox" onclick="closeLightbox()" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.9); z-index:9999; justify-content:center; align-items:center; cursor:pointer;">
+            <img id="lightbox-img" style="max-width:90%; max-height:90vh; border-radius:16px; box-shadow: 0 20px 60px rgba(0,0,0,0.8);" src="" alt="" />
+          </div>
+
+          <style>
+            .screenshot-thumb:hover {
+              transform: scale(1.05) rotate(0deg) !important;
+              border-color: #60a5fa !important;
+              box-shadow: 0 20px 40px rgba(0,0,0,0.6) !important;
+            }
+          </style>
+
+          <!-- Pricing -->
+          <div id="pricing" style="margin-bottom: 80px; text-align: center;">
+            <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 15px; color: #fff;">Simple, Honest Pricing</h2>
+            <p style="color: #a0aec0; max-width: 600px; margin: 0 auto 50px; line-height: 1.7;">No ads. No hidden fees. No taking a cut of your invoices. Just pay for what you need and own your data.</p>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 25px; max-width: 900px; margin: 0 auto;">
+
+              <!-- Free -->
+              <div style="padding: 35px 25px; border-radius: 20px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); text-align: left;">
+                <div style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; color: #718096; margin-bottom: 10px; letter-spacing: 1px;">Free</div>
+                <div style="font-size: 2.5rem; font-weight: 800; color: #fff; margin-bottom: 5px;">$0</div>
+                <div style="color: #718096; font-size: 0.9rem; margin-bottom: 25px;">Forever free</div>
+                <ul style="list-style: none; padding: 0; margin: 0 0 30px; color: #a0aec0; font-size: 0.95rem; line-height: 2;">
+                  <li>✓ View all sections</li>
+                  <li>✓ Read-only access</li>
+                  <li>✓ See how it works</li>
+                  <li style="color: #4a5568;">✗ Create or edit records</li>
+                  <li style="color: #4a5568;">✗ Time tracking</li>
+                  <li style="color: #4a5568;">✗ Invoicing</li>
+                </ul>
+                <div style="padding: 12px; border-radius: 10px; background: rgba(255,255,255,0.05); color: #718096; font-weight: 600; text-align: center; font-size: 0.9rem;">Always Free</div>
+              </div>
+
+              <!-- Basic -->
+              <div style="padding: 35px 25px; border-radius: 20px; background: rgba(43,108,176,0.15); border: 2px solid rgba(96,165,250,0.4); text-align: left; position: relative;">
+                <div style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; color: #60a5fa; margin-bottom: 10px; letter-spacing: 1px;">Basic</div>
+                <div style="font-size: 2.5rem; font-weight: 800; color: #fff; margin-bottom: 5px;">$2.99</div>
+                <div style="color: #718096; font-size: 0.9rem; margin-bottom: 25px;">per month</div>
+                <ul style="list-style: none; padding: 0; margin: 0 0 30px; color: #a0aec0; font-size: 0.95rem; line-height: 2;">
+                  <li>✓ Full read/write access</li>
+                  <li>✓ Client, project, invoice management</li>
+                  <li>✓ Time tracking + billing</li>
+                  <li>✓ Task management</li>
+                  <li>✓ Financial overview</li>
+                  <li>✓ Push notifications</li>
+                  <li>✓ PDF invoice export</li>
+                  <li style="color: #4a5568;">✗ Custom branding</li>
+                  <li style="color: #4a5568;">✗ Advanced exports</li>
+                </ul>
+                <a href="#quote" style="display: block; padding: 12px; border-radius: 10px; background: #2b6cb0; color: #fff; font-weight: 700; text-align: center; font-size: 0.95rem; text-decoration: none; transition: 0.3s;">Get Early Access</a>
+              </div>
+
+              <!-- Pro -->
+              <div style="padding: 35px 25px; border-radius: 20px; background: rgba(180,130,20,0.1); border: 2px solid rgba(234,179,8,0.4); text-align: left; position: relative;">
+                <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+                  <div style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; color: #eab308; letter-spacing: 1px;">Pro</div>
+                  <div style="padding: 2px 10px; background: rgba(234,179,8,0.2); border: 1px solid rgba(234,179,8,0.4); border-radius: 99px; color: #eab308; font-size: 0.75rem; font-weight: 700;">BEST VALUE</div>
+                </div>
+                <div style="font-size: 2.5rem; font-weight: 800; color: #fff; margin-bottom: 5px;">$4.99</div>
+                <div style="color: #718096; font-size: 0.9rem; margin-bottom: 25px;">per month</div>
+                <ul style="list-style: none; padding: 0; margin: 0 0 30px; color: #a0aec0; font-size: 0.95rem; line-height: 2;">
+                  <li>✓ Everything in Basic</li>
+                  <li>✓ Custom company branding</li>
+                  <li>✓ Full theme customization</li>
+                  <li>✓ Export to Word/other formats</li>
+                  <li>✓ Full financial report printing</li>
+                  <li>✓ Google Calendar sync</li>
+                  <li>✓ Priority support</li>
+                </ul>
+                <a href="#quote" style="display: block; padding: 12px; border-radius: 10px; background: #b7791f; color: #fff; font-weight: 700; text-align: center; font-size: 0.95rem; text-decoration: none; transition: 0.3s;">Get Early Access</a>
+              </div>
+
+            </div>
+            <p style="color: #718096; font-size: 0.85rem; margin-top: 30px;">Beta testers get <strong style="color: #60a5fa;">5 years of Pro free</strong> in exchange for feedback. <a href="#quote" style="color: #60a5fa;">Sign up below.</a></p>
+          </div>
+
+          <!-- Follow Along -->
+          <div style="margin-bottom: 60px; text-align: center; padding: 0 20px;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 25px; color: #fff;">Follow The Journey</h2>
+            <p style="font-size: 1.1rem; max-width: 800px; margin: 0 auto 15px; line-height: 1.7; color: #a0aec0;">
+              This app is being built in public — real progress, real struggles, real updates. Follow along and watch StudioFlow go from beta to launch.
+            </p>
+            <p style="font-size: 1rem; max-width: 800px; margin: 0 auto 30px; line-height: 1.7; color: #a0aec0;">
+              <a href="https://webfurious-designs.bsky.social" style="color: #60a5fa; text-decoration: none;">Bluesky</a> &bull;
+              <a href="http://twitter.com/Webfurious_Des" style="color: #60a5fa; text-decoration: none;">Twitter</a> &bull;
+              <a href="https://www.facebook.com/share/1DnqJM4wCC/" style="color: #60a5fa; text-decoration: none;">Facebook</a> &bull;
+            </p>
+          </div>
+
+          <!-- Beta Signup -->
+          <div id="quote" style="text-align: center; padding: 50px 20px; border-radius: 15px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1);">
+            <h2 style="font-size: 1.8rem; margin-bottom: 15px; color: #fff;">Be First In Line</h2>
+            <p style="font-size: 1rem; margin: 0 auto 10px; line-height: 1.7; color: #a0aec0; max-width: 500px;">
+              Want early access to StudioFlow? Sign up for beta and get a chance to help shape the app.
+            </p>
+            <p style="font-size: 0.95rem; margin: 0 auto 24px; color: #60a5fa; max-width: 500px;">
+              Beta testers get <strong>5 years of Pro access free</strong> in exchange for real feedback.
+            </p>
+            <form action="https://formspree.io/f/xaqpqqgq" method="POST" style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+              <input type="email" name="email" placeholder="youremail@gmail.com" required
+                style="padding: 14px 18px; border-radius: 10px; border: 1px solid #4a5568; background: #1a202c; color: #fff; font-size: 1rem; width: 280px; outline: none;">
+              <button type="submit"
+                style="padding: 14px 28px; border-radius: 10px; border: none; background: #2b6cb0; color: #fff; font-size: 1rem; font-weight: bold; cursor: pointer; transition: 0.3s; box-shadow: 0 4px 14px 0 rgba(43,108,176,0.39);">
+                Notify Me
+              </button>
+            </form>
+            <p style="font-size: 0.8rem; margin-top: 15px; color: #718096;">No spam. Just a heads up when it's ready.</p>
+          </div>
+
+        </section>
+
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="img/header.png" alt="Webfurious Designs" />
+                    <p>Professional design services for small businesses and individuals.</p>
+                    <div class="footer-social">
+                        <a href="https://webfurious-designs.bsky.social"><i class="fas fa-cloud"></i></a>
+                        <a href="https://github.com/webfurious-designs/StudioFlow"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="StudioFlow.html">StudioFlow</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                </div>
+                <div class="footer-col">
+                    <h4>StudioFlow</h4>
+                    <a href="download.html">Download Beta</a>
+                    <a href="StudioFlow.html#quote">Join Beta</a>
+                    <a href="StudioFlow.html#pricing">Pricing</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-phone"></i> (815) 596-0713</p>
+                    <p><i class="fas fa-envelope"></i> webfuriousdesigns@gmail.com</p>
+                    <p><i class="fas fa-clock"></i> Mon-Fri 9am-6pm</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright &copy; 2026 Webfurious Designs</p>
+                <div class="footer-bottom-links"><a href="privacy.html">Privacy Policy</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMobileNav() { document.getElementById('mobile-nav').classList.toggle('open'); }
+        window.addEventListener('scroll', () => { document.getElementById('site-header').classList.toggle('scrolled', window.scrollY > 20); });
+        function openLightbox(src) {
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox').style.display = 'flex';
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').style.display = 'none';
+        }
+    </script>
+    <script src="js/theme.js"></script>
+</body>
+</html>
