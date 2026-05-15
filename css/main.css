@@ -758,7 +758,7 @@ body.light-theme .cta-section {
 .process-step p { font-size: 0.88rem; color: #64748b; line-height: 1.6; }
 
 /* ============================================
-   INDEX PAGE — Responsive additions
+   RESPONSIVE LAYOUT
    ============================================ */
 @media (max-width: 900px) {
     .hero .container { grid-template-columns: 1fr; }
@@ -768,18 +768,7 @@ body.light-theme .cta-section {
     .services-grid { grid-template-columns: 1fr; }
     .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
     .process-steps { grid-template-columns: repeat(2, 1fr); }
-}
-@media (max-width: 480px) {
-    .hero h1 { font-size: 2.2rem; }
-    .portfolio-grid { grid-template-columns: 1fr; }
-    .process-steps { grid-template-columns: 1fr; }
-}
-
-/* Responsive */
-@media (max-width: 900px) {
-    .story-grid { grid-template-columns: 1fr; }
-    .skills-grid { grid-template-columns: repeat(2, 1fr); }
-    .footer-top { grid-template-columns: 1fr 1fr; }
+    .container { max-width: 100%; padding: 0 16px; }
 }
 @media (max-width: 768px) {
     .nav-links { display: none; }
@@ -788,9 +777,19 @@ body.light-theme .cta-section {
     .section-title { font-size: 2rem; }
     .page-hero h1 { font-size: 2.2rem; }
     .cta-inner h2 { font-size: 2.2rem; }
+    .container { max-width: 100%; padding: 0 12px; }
+    .page-hero-content { padding: 0 12px; }
 }
 @media (max-width: 480px) {
     .skills-grid { grid-template-columns: repeat(2, 1fr); }
+    .footer-top { grid-template-columns: 1fr; }
+    .footer-bottom { flex-direction: column; text-align: center; }
+    .container { max-width: 100%; padding: 0 8px; }
+    .page-hero-content { padding: 0 8px; }
+    .hero h1 { font-size: 2.2rem; }
+    .portfolio-grid { grid-template-columns: 1fr; }
+    .process-steps { grid-template-columns: 1fr; }
+    .story-grid { grid-template-columns: 1fr; }
     .footer-top { grid-template-columns: 1fr; }
     .footer-bottom { flex-direction: column; text-align: center; }
 }
