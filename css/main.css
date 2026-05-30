@@ -794,3 +794,100 @@ body.light-theme .cta-section {
     .footer-top { grid-template-columns: 1fr; }
     .footer-bottom { flex-direction: column; text-align: center; }
 }
+
+/* ============================================
+   LIGHT THEME — All Pages Complete
+   ============================================ */
+
+/* Footer — light */
+body.light-theme .site-footer { background: #f8fafc; border-top-color: rgba(0,0,0,0.08); }
+body.light-theme .footer-brand p { color: #64748b; }
+body.light-theme .footer-col h4 { color: #1e293b; }
+body.light-theme .footer-col a { color: #64748b; }
+body.light-theme .footer-col a:hover { color: #2b6cb0; }
+body.light-theme .footer-col p { color: #64748b; }
+body.light-theme .footer-bottom { border-top-color: rgba(0,0,0,0.06); }
+body.light-theme .footer-bottom p { color: #94a3b8; }
+body.light-theme .footer-bottom-links a { color: #94a3b8; }
+body.light-theme .footer-bottom-links a:hover { color: #475569; }
+body.light-theme .footer-social a { background: rgba(0,0,0,0.04); border-color: rgba(0,0,0,0.08); color: #64748b; }
+body.light-theme .footer-social a:hover { background: rgba(43,108,176,0.1); border-color: rgba(43,108,176,0.3); color: #2b6cb0; }
+body.light-theme .payment-icons img { opacity: 0.7; filter: invert(0.2); }
+
+/* Modal — light */
+body.light-theme .modal { background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); }
+body.light-theme .modal img { box-shadow: 0 30px 80px rgba(0,0,0,0.25); }
+
+/* Page hero (inner pages) — light */
+body.light-theme .page-hero { border-bottom-color: rgba(0,0,0,0.06); }
+body.light-theme .page-hero-bg { background: linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%); }
+body.light-theme .page-hero h1 { color: #0f1923; }
+body.light-theme .page-hero p { color: #64748b; }
+
+/* Story section — light */
+body.light-theme .story-section { background: #f8fafc; }
+body.light-theme .story-content p { color: #475569; }
+body.light-theme .about-card { background: #fff; border-color: rgba(0,0,0,0.08); }
+body.light-theme .about-card:hover { border-color: rgba(43,108,176,0.3); background: #fff; }
+body.light-theme .about-card h3 { color: #0f1923; }
+body.light-theme .about-card p { color: #64748b; }
+
+/* Skills — light */
+body.light-theme .skills-section { background: #f1f5f9; }
+body.light-theme .skill-item { background: #fff; border-color: rgba(0,0,0,0.07); }
+body.light-theme .skill-item:hover { border-color: rgba(43,108,176,0.3); background: #fff; transform: translateY(-3px); }
+body.light-theme .skill-item span { color: #475569; }
+
+/* CTA — light (fix broken gradient) */
+body.light-theme .cta-section { background: linear-gradient(135deg, #2b6cb0 0%, #1a365d 100%); }
+body.light-theme .cta-section::before { display: none; }
+body.light-theme .cta-inner h2 { color: #fff; }
+body.light-theme .cta-inner p { color: rgba(255,255,255,0.8); }
+
+/* Top bar — light */
+body.light-theme .top-bar { background: #f1f5f9; border-bottom-color: rgba(0,0,0,0.06); color: #64748b; }
+body.light-theme .top-bar-right a { color: #64748b; }
+body.light-theme .top-bar-right a:hover { color: #2b6cb0; }
+
+/* Header — light */
+body.light-theme .site-header { background: rgba(255,255,255,0.95); border-bottom-color: rgba(0,0,0,0.07); }
+body.light-theme .nav-links a { color: #475569; }
+body.light-theme .nav-links a:hover { color: #2b6cb0; background: rgba(43,108,176,0.05); }
+body.light-theme .nav-links a.active { color: #2b6cb0; background: rgba(43,108,176,0.08); }
+body.light-theme .nav-toggle { border-color: rgba(0,0,0,0.12); color: #475569; }
+body.light-theme .mobile-nav { background: #f8fafc; border-top-color: rgba(0,0,0,0.07); }
+body.light-theme .mobile-nav a { color: #475569; border-bottom-color: rgba(0,0,0,0.05); }
+body.light-theme .mobile-nav a:hover { color: #2b6cb0; background: rgba(43,108,176,0.05); }
+
+/* Theme toggle — light */
+body.light-theme .theme-toggle { border-color: rgba(0,0,0,0.12); color: #64748b; }
+body.light-theme .theme-toggle:hover { color: #2b6cb0; border-color: rgba(43,108,176,0.3); background: rgba(43,108,176,0.05); }
+
+/* Buttons — light adjustments */
+body.light-theme .btn-secondary { color: #1e293b; border-color: rgba(0,0,0,0.12); }
+body.light-theme .btn-secondary:hover { background: rgba(0,0,0,0.04); border-color: rgba(0,0,0,0.2); }
+body.light-theme .btn-outline-blue { color: #2b6cb0; border-color: rgba(43,108,176,0.3); }
+body.light-theme .btn-outline-blue:hover { background: rgba(43,108,176,0.08); border-color: rgba(43,108,176,0.5); }
+
+/* Portfolio section — fix bad overrides */
+body.light-theme .portfolio-section .section-title { color: #0f1923 !important; }
+body.light-theme .portfolio-section .section-subtitle { color: #64748b !important; }
+
+/* Portfolio items — light */
+body.light-theme .portfolio-item { background: #fff; border-color: rgba(0,0,0,0.08); }
+body.light-theme .portfolio-cta a { color: #2b6cb0; }
+
+/* Services — light */
+body.light-theme .services-section { background: #f8fafc; }
+
+/* Process — light */
+body.light-theme .process-section { background: #f1f5f9; }
+
+/* Studioflow — light */
+body.light-theme .studioflow-section { background: #f8fafc; }
+
+/* Animations — light (keeps reveal working) */
+body.light-theme .reveal { }
+
+/* Preload flash prevention */
+html.preload-light body { display: none; }
