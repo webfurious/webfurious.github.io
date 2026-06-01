@@ -142,15 +142,15 @@ img { max-width: 100%; height: auto; display: block; }
     background: rgba(246,201,14,0.05);
 }
 
-/* ── Light Theme — Premium Creative Studio ── */
+/* ── Light Theme ── */
 body.light-theme {
-    background: #f8faff;
+    background: #0da0d7;
     color: #0f1923;
 }
 
 /* Top Bar */
 body.light-theme .top-bar {
-    background: #0f1923;
+    background: #164e7d;
     border-bottom: 1px solid rgba(255,255,255,0.06);
     color: #94a3b8;
 }
@@ -160,7 +160,7 @@ body.light-theme .top-bar-right a:hover { color: #60a5fa; }
 
 /* Header */
 body.light-theme .site-header {
-    background: #161c2bf7;
+    background: #0b5f84;
     backdrop-filter: blur(20px);
     border-bottom: 1px solid rgba(15,25,35,0.08);
     box-shadow: 0 1px 40px rgba(15,25,35,0.06);
