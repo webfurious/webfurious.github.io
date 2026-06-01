@@ -20,23 +20,45 @@
         const toggle = document.createElement('button');
         toggle.className = 'theme-toggle';
         toggle.title = 'Toggle light/dark mode';
-        toggle.innerHTML = savedTheme === 'light' 
-            ? '<i class="fas fa-moon"></i>' 
+        toggle.innerHTML = savedTheme === 'light'
+            ? '<i class="fas fa-moon"></i>'
             : '<i class="fas fa-sun"></i>';
 
-        // Insert into nav after the last nav link
+        // Insert into desktop nav
         const navLinks = document.querySelector('.nav-links');
         if (navLinks) {
             navLinks.appendChild(toggle);
         }
 
-        // Toggle handler
+        // Also insert into mobile nav if present
+        const mobileNav = document.querySelector('.mobile-nav');
+        if (mobileNav) {
+            const mobileToggle = toggle.cloneNode(true);
+            mobileNav.appendChild(mobileToggle);
+
+            // Mobile toggle handler (mirrors desktop)
+            mobileToggle.addEventListener('click', function() {
+                const isLight = document.body.classList.toggle('light-theme');
+                localStorage.setItem('wf-theme', isLight ? 'light' : 'dark');
+                toggle.innerHTML = isLight
+                    ? '<i class="fas fa-moon"></i>'
+                    : '<i class="fas fa-sun"></i>';
+                mobileToggle.innerHTML = toggle.innerHTML;
+            });
+        }
+
+        // Desktop toggle handler
         toggle.addEventListener('click', function() {
             const isLight = document.body.classList.toggle('light-theme');
             localStorage.setItem('wf-theme', isLight ? 'light' : 'dark');
-            toggle.innerHTML = isLight 
-                ? '<i class="fas fa-moon"></i>' 
+            toggle.innerHTML = isLight
+                ? '<i class="fas fa-moon"></i>'
                 : '<i class="fas fa-sun"></i>';
+            // Sync mobile toggle icon
+            const mobileToggles = document.querySelectorAll('.theme-toggle');
+            mobileToggles.forEach(function(t) {
+                t.innerHTML = toggle.innerHTML;
+            });
         });
     });
 })();
