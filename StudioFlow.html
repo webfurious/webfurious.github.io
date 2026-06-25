@@ -65,9 +65,9 @@
             </p>
             
             <!-- Countdown Timer -->
-            <div style="display: inline-block; padding: 30px 40px; border-radius: 15px; background: rgba(96,165,250,0.1); border: 2px solid rgba(96,165,250,0.3); margin-bottom: 30px;">
+            <div class="countdown-box">
               <div style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; color: #60a5fa; letter-spacing: 1px; margin-bottom: 15px;">Time Until Launch</div>
-              <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;">
+              <div class="countdown-grid">
                 <div style="text-align: center;">
                   <div style="font-size: 2.5rem; font-weight: 800; color: #fff;" id="days">0</div>
                   <div style="font-size: 0.85rem; color: #a0aec0; margin-top: 5px;">Days</div>
@@ -137,6 +137,27 @@
           </div>
 
           <style>
+            .countdown-box {
+              display: block;
+              max-width: 480px;
+              width: 100%;
+              box-sizing: border-box;
+              padding: 25px 20px;
+              border-radius: 15px;
+              background: rgba(96,165,250,0.1);
+              border: 2px solid rgba(96,165,250,0.3);
+              margin: 0 auto 30px;
+            }
+            .countdown-grid {
+              display: grid;
+              grid-template-columns: repeat(4, 1fr);
+              gap: 12px;
+            }
+            @media (max-width: 400px) {
+              .countdown-box { padding: 20px 15px; }
+              .countdown-grid { gap: 8px; }
+              #days, #hours, #minutes, #seconds { font-size: 2rem !important; }
+            }
             .feature-card:hover {
               transform: translateY(-5px);
               background: rgba(255,255,255,0.06) !important;
