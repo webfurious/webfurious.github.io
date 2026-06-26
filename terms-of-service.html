@@ -3,98 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="StudioFlow Terms of Service">
+    <meta name="description" content="StudioFlow Terms of Service — Webfurious Designs">
     <title>Terms of Service — StudioFlow</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/14615e9eac.js" crossorigin="anonymous"></script>
     <link href="css/main.css" rel="stylesheet">
 </head>
-<body style="background: #060910; color: #f0f6fc;">
+<body>
 
     <div class="top-bar">
         <div class="container">
             <div class="top-bar-left">
                 <span><i class="fas fa-phone"></i> (815) 596-0713</span>
+                <span><i class="fas fa-clock"></i> Mon-Fri 9am-6pm</span>
+            </div>
+            <div class="top-bar-right">
+                <a href="https://www.facebook.com/share/1DnqJM4wCC/"><i class="fab fa-facebook-f"></i></a>
             </div>
         </div>
     </div>
 
-    <header class="site-header">
+    <header class="site-header" id="site-header">
         <div class="container">
             <div class="header-inner">
                 <div class="logo"><a href="index.html"><img src="img/header.png" alt="Webfurious Designs" /></a></div>
                 <nav class="nav-links">
                     <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="portfolio.html">Portfolio</a>
                     <a href="StudioFlow.html">StudioFlow</a>
-                    <a href="privacy.html">Privacy</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="mailto:webfuriousdesigns@gmail.com" class="nav-cta">Get a Quote</a>
                 </nav>
+                <button class="nav-toggle" onclick="toggleMobileNav()">&#9776;</button>
             </div>
+        </div>
+        <div class="mobile-nav" id="mobile-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="StudioFlow.html">StudioFlow</a>
+            <a href="contact.html">Contact</a>
         </div>
     </header>
 
-    <div style="max-width: 900px; margin: 0 auto; padding: 60px 20px;">
-        <h1 style="font-size: 2.5rem; margin-bottom: 10px;">Terms of Service</h1>
-        <p style="color: #94a3b8; margin-bottom: 40px;">Effective: July 15th, 2026</p>
+    <section class="page-hero">
+        <div class="page-hero-bg"></div>
+        <div class="container">
+            <div class="page-hero-content">
+                <div class="section-tag">Legal</div>
+                <h1>Terms of <span class="accent">Service</span></h1>
+                <p>Effective: July 15, 2026 — Governs your use of the StudioFlow mobile application.</p>
+            </div>
+        </div>
+    </section>
 
-        <section style="margin-bottom: 40px;">
-            <h2 style="font-size: 1.5rem; margin-bottom: 15px;">1. User Accounts</h2>
-            <p style="line-height: 1.7; color: #cbd5e1;">You are responsible for maintaining the confidentiality of your login credentials and password. StudioFlow is not responsible for any unauthorized access to your account. You agree to notify us immediately of any unauthorized use of your account.</p>
-        </section>
+    <section style="padding: 80px 0; background: #060910;">
+        <div class="container">
+            <div class="privacy-layout">
 
-        <section style="margin-bottom: 40px;">
-            <h2 style="font-size: 1.5rem; margin-bottom: 15px;">2. User Data and Privacy</h2>
-            <p style="line-height: 1.7; color: #cbd5e1;">Your data is stored securely using Firebase. Each user has complete data isolation — no other user can access your information. We do not share your data with third parties. For details on how we handle your data, see our <a href="privacy.html" style="color: #60a5fa; text-decoration: none;">Privacy Policy</a>.</p>
-        </section>
+                <!-- Table of Contents -->
+                <div class="privacy-toc reveal">
+                    <h4>Contents</h4>
+                    <a href="#user-accounts">User Accounts</a>
+                    <a href="#user-data">User Data &amp; Privacy</a>
+                    <a href="#acceptable-use">Acceptable Use</a>
+                    <a href="#disclaimer">Disclaimer of Warranties</a>
+                    <a href="#liability">Limitation of Liability</a>
+                    <a href="#termination">Termination</a>
+                    <a href="#changes">Changes to Terms</a>
+                    <a href="#contact">Contact</a>
+                </div>
 
-        <section style="margin-bottom: 40px;">
-            <h2 style="font-size: 1.5rem; margin-bottom: 15px;">3. Acceptable Use</h2>
-            <p style="line-height: 1.7; color: #cbd5e1;">You agree to use StudioFlow only for lawful purposes and in a way that does not infringe upon the rights of others or restrict their use and enjoyment of StudioFlow. Prohibited behavior includes:</p>
-            <ul style="margin-left: 20px; color: #cbd5e1; line-height: 1.8;">
-                <li>Harassing, abusing, or threatening other users</li>
-                <li>Attempting to unauthorized access to the app or servers</li>
-                <li>Reverse-engineering, decompiling, or attempting to derive the source code</li>
-                <li>Using the app for illegal purposes</li>
-            </ul>
-        </section>
+                <!-- Terms Content -->
+                <div class="privacy-content">
 
-        <section style="margin-bottom: 40px;">
-            <h2 style="font-size: 1.5rem; margin-bottom: 15px;">4. Disclaimer of Warranties</h2>
-            <p style="line-height: 1.7; color: #cbd5e1;">StudioFlow is provided "as is" and "as available" without warranties of any kind, either express or implied. We do not guarantee that the app will be uninterrupted, error-free, or free from malicious code. We do not warrant that any defects will be corrected.</p>
-        </section>
+                    <div class="privacy-intro">
+                        <p>These Terms of Service govern your use of the StudioFlow mobile application provided by Webfurious Designs. By downloading or using StudioFlow, you agree to be bound by these terms. If you do not agree to these terms, please do not use the application.</p>
+                    </div>
 
-        <section style="margin-bottom: 40px;">
-            <h2 style="font-size: 1.5rem; margin-bottom: 15px;">5. Limitation of Liability</h2>
-            <p style="line-height: 1.7; color: #cbd5e1;">In no event shall Webfurious Designs or Tony AuBuchon be liable for any indirect, incidental, special, consequential, or punitive damages arising out of your use of or inability to use StudioFlow, including but not limited to loss of data, loss of revenue, or business interruption.</p>
-        </section>
+                    <div class="privacy-section" id="user-accounts">
+                        <h2>1. User Accounts</h2>
+                        <p>You are responsible for maintaining the confidentiality of your login credentials and password. StudioFlow is not responsible for any unauthorized access to your account. You agree to notify us immediately of any unauthorized use of your account at <a href="mailto:webfuriousdesigns@gmail.com" style="color:#60a5fa;">webfuriousdesigns@gmail.com</a>.</p>
+                    </div>
 
-        <section style="margin-bottom: 40px;">
-            <h2 style="font-size: 1.5rem; margin-bottom: 15px;">6. Termination</h2>
-            <p style="line-height: 1.7; color: #cbd5e1;">We reserve the right to terminate or suspend your account immediately, without prior notice, if you violate these terms. Upon termination, your right to use the app ceases immediately.</p>
-        </section>
+                    <div class="privacy-section" id="user-data">
+                        <h2>2. User Data and Privacy</h2>
+                        <p>Your data is stored securely using Firebase. Each user has complete data isolation — no other user can access your information. We do not share your data with third parties. For details on how we handle your data, see our <a href="privacy.html" style="color: #60a5fa;">Privacy Policy</a>.</p>
+                    </div>
 
-        <section style="margin-bottom: 40px;">
-            <h2 style="font-size: 1.5rem; margin-bottom: 15px;">7. Changes to Terms</h2>
-            <p style="line-height: 1.7; color: #cbd5e1;">We may modify these terms at any time. Changes are effective immediately upon posting to the website. Your continued use of StudioFlow following the posting of revised terms means that you accept and agree to the changes.</p>
-        </section>
+                    <div class="privacy-section" id="acceptable-use">
+                        <h2>3. Acceptable Use</h2>
+                        <p>You agree to use StudioFlow only for lawful purposes and in a way that does not infringe upon the rights of others or restrict their use and enjoyment of StudioFlow. Prohibited behavior includes:</p>
+                        <ul>
+                            <li>Harassing, abusing, or threatening other users</li>
+                            <li>Attempting unauthorized access to the app or servers</li>
+                            <li>Reverse-engineering, decompiling, or attempting to derive the source code</li>
+                            <li>Using the app for illegal purposes</li>
+                        </ul>
+                    </div>
 
-        <section style="margin-bottom: 40px;">
-            <h2 style="font-size: 1.5rem; margin-bottom: 15px;">8. Contact</h2>
-            <p style="line-height: 1.7; color: #cbd5e1;">If you have questions about these terms, contact us at <a href="mailto:webfuriousdesigns@gmail.com" style="color: #60a5fa; text-decoration: none;">webfuriousdesigns@gmail.com</a></p>
-        </section>
+                    <div class="privacy-section" id="disclaimer">
+                        <h2>4. Disclaimer of Warranties</h2>
+                        <p>StudioFlow is provided "as is" and "as available" without warranties of any kind, either express or implied. We do not guarantee that the app will be uninterrupted, error-free, or free from malicious code. We do not warrant that any defects will be corrected.</p>
+                    </div>
 
-    </div>
+                    <div class="privacy-section" id="liability">
+                        <h2>5. Limitation of Liability</h2>
+                        <p>In no event shall Webfurious Designs or Tony AuBuchon be liable for any indirect, incidental, special, consequential, or punitive damages arising out of your use of or inability to use StudioFlow, including but not limited to loss of data, loss of revenue, or business interruption.</p>
+                    </div>
+
+                    <div class="privacy-section" id="termination">
+                        <h2>6. Termination</h2>
+                        <p>We reserve the right to terminate or suspend your account immediately, without prior notice, if you violate these terms. Upon termination, your right to use the app ceases immediately.</p>
+                    </div>
+
+                    <div class="privacy-section" id="changes">
+                        <h2>7. Changes to Terms</h2>
+                        <p>We may modify these terms at any time. Changes are effective immediately upon posting to the website. Your continued use of StudioFlow following the posting of revised terms means that you accept and agree to the changes.</p>
+                    </div>
+
+                    <div class="privacy-section" id="contact">
+                        <h2>8. Contact</h2>
+                        <p>If you have questions about these terms, contact us:</p>
+                        <ul>
+                            <li>Email: <a href="mailto:webfuriousdesigns@gmail.com" style="color:#60a5fa;">webfuriousdesigns@gmail.com</a></li>
+                            <li>Website: <a href="https://webfurious.github.io/StudioFlow.html" target="_blank" style="color:#60a5fa;">webfurious.github.io/StudioFlow</a></li>
+                            <li>Phone: (815) 596-0713</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer class="site-footer">
         <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="img/header.png" alt="Webfurious Designs" />
+                    <p>Professional design services for small businesses and individuals.</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/share/1DnqJM4wCC/"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                    <div class="payment-icons">
+                        <img src="img/icons/payment-1.png" alt="" />
+                        <img src="img/icons/payment-2.png" alt="" />
+                        <img src="img/icons/payment-3.png" alt="" />
+                        <img src="img/icons/payment-4.png" alt="" />
+                        <img src="img/icons/payment-5.png" alt="" />
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Navigation</h4>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="StudioFlow.html">StudioFlow</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-phone"></i> (815) 596-0713</p>
+                    <p><i class="fas fa-envelope"></i> webfuriousdesigns@gmail.com</p>
+                    <p><i class="fas fa-clock"></i> Mon-Fri 9am-6pm</p>
+                </div>
+            </div>
             <div class="footer-bottom">
                 <p>Copyright &copy; 2026 Webfurious Designs</p>
                 <div class="footer-bottom-links">
-                    <a href="privacy.html">Privacy Policy</a> | 
+                    <a href="privacy.html">Privacy Policy</a> |
                     <a href="terms-of-service.html">Terms of Service</a>
                 </div>
             </div>
         </div>
     </footer>
 
+    <style>
+        .privacy-layout { display: grid; grid-template-columns: 220px 1fr; gap: 60px; align-items: start; }
+        .privacy-toc { position: sticky; top: 100px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.07); border-radius: 14px; padding: 24px; }
+        .privacy-toc h4 { color: #fff; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px; }
+        .privacy-toc a { display: block; color: #4a5568; font-size: 0.85rem; margin-bottom: 10px; transition: color 0.2s; padding: 4px 0; border-bottom: 1px solid rgba(255,255,255,0.04); }
+        .privacy-toc a:hover { color: #60a5fa; }
+        .privacy-intro { background: rgba(96,165,250,0.05); border: 1px solid rgba(96,165,250,0.15); border-radius: 12px; padding: 24px; margin-bottom: 40px; }
+        .privacy-intro p { color: #94a3b8; font-size: 0.95rem; line-height: 1.7; margin-bottom: 10px; }
+        .privacy-intro p:last-child { margin-bottom: 0; }
+        .privacy-section { margin-bottom: 50px; padding-bottom: 50px; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .privacy-section:last-child { border-bottom: none; }
+        .privacy-section h2 { color: #fff; font-size: 1.5rem; font-weight: 700; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid rgba(96,165,250,0.15); }
+        .privacy-section h3 { color: #e2e8f0; font-size: 1.05rem; font-weight: 600; margin: 20px 0 10px; }
+        .privacy-section p { color: #94a3b8; font-size: 0.95rem; line-height: 1.75; margin-bottom: 14px; }
+        .privacy-section ul { padding-left: 20px; margin-bottom: 14px; }
+        .privacy-section ul li { color: #94a3b8; font-size: 0.95rem; line-height: 1.75; margin-bottom: 8px; }
+        .privacy-section strong { color: #e2e8f0; }
+        @media (max-width: 768px) { .privacy-layout { grid-template-columns: 1fr; } .privacy-toc { position: static; } }
+    </style>
+
+    <script>
+        function toggleMobileNav() { document.getElementById('mobile-nav').classList.toggle('open'); }
+        window.addEventListener('scroll', () => { document.getElementById('site-header').classList.toggle('scrolled', window.scrollY > 20); });
+        const observer = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }); }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+    <script src="js/theme.js"></script>
 </body>
 </html>
