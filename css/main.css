@@ -24,7 +24,7 @@ img { max-width: 100%; height: auto; display: block; }
 .btn-outline-blue:hover { background: rgba(96,165,250,0.08); border-color: rgba(96,165,250,0.5); transform: translateY(-2px); }
 
 /* Top Bar */
-.top-bar { background: #232323; border-bottom: 1px solid rgba(255,255,255,0.04); padding: 8px 0; font-size: 0.8rem; color: #4a5568; }
+.top-bar { background: #131313; border-bottom: 1px solid rgba(255,255,255,0.04); padding: 8px 0; font-size: 0.8rem; color: #4a5568; }
 .top-bar .container { display: flex; justify-content: space-between; align-items: center; }
 .top-bar-left { display: flex; gap: 20px; align-items: center; }
 .top-bar-right { display: flex; gap: 16px; }
