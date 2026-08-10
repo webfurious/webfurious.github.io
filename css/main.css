@@ -462,7 +462,7 @@ body.light-theme .cta-section {
     animation: fadeInUp 0.6s ease 0.1s both;
 }
 .hero h1 .line-highlight {
-    background: #909b19;
+    color: #909b19;
 }
 .hero p {
     font-size: 1.1rem;
