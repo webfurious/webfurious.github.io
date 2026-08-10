@@ -55,7 +55,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* Page Hero (inner pages) */
 .page-hero { padding: 80px 0 60px; position: relative; overflow: hidden; border-bottom: 1px solid rgba(255,255,255,0.05); }
-.page-hero-bg { position: absolute; inset: 0; background: radial-gradient(ellipse 80% 60% at 20% 50%, rgba(43,108,176,0.1) 0%, transparent 60%), linear-gradient(180deg, #060910 0%, #0a0f1a 100%); }
+.page-hero-bg { position: absolute; inset: 0; background: #3F5663; }
 .page-hero .container { position: relative; z-index: 1; }
 .page-hero-content { max-width: 700px; }
 .page-hero h1 { font-size: 3rem; font-weight: 800; color: #fff; letter-spacing: -1px; margin-bottom: 16px; }
