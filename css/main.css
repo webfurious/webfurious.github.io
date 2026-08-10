@@ -160,7 +160,7 @@ body.light-theme .top-bar-right a:hover { color: #60a5fa; }
 
 /* Header */
 body.light-theme .site-header {
-    background: #0b5f84;
+    background: #263441;
     backdrop-filter: blur(20px);
     border-bottom: 1px solid rgba(15,25,35,0.08);
     box-shadow: 0 1px 40px rgba(15,25,35,0.06);
@@ -417,10 +417,7 @@ body.light-theme .cta-section {
 .hero-bg {
     position: absolute;
     inset: 0;
-    background:
-        radial-gradient(ellipse 80% 60% at 20% 50%, rgba(43,108,176,0.15) 0%, transparent 60%),
-        radial-gradient(ellipse 60% 40% at 80% 20%, rgba(144,155,25,0.08) 0%, transparent 50%),
-        linear-gradient(180deg, #060910 0%, #0a0f1a 100%);
+    background: #3F566c;
 }
 .hero-grid {
     position: absolute;
