@@ -7,7 +7,7 @@
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
-body { font-family: 'Inter', sans-serif; background: #060910; color: #e2e8f0; overflow-x: hidden; }
+body { font-family: 'Inter', sans-serif; background: #0A0A23; color: #e2e8f0; overflow-x: hidden; }
 a { text-decoration: none; color: inherit; }
 img { max-width: 100%; height: auto; display: block; }
 
@@ -16,11 +16,11 @@ img { max-width: 100%; height: auto; display: block; }
 .accent-gold { color: #f6c90e; }
 
 /* Buttons */
-.btn-primary { display: inline-flex; align-items: center; gap: 8px; padding: 13px 26px; background: #d3e042; color: #000; border-radius: 10px; font-weight: 700; font-size: 0.92rem; transition: all 0.3s ease; box-shadow: 0 4px 20px rgba(43,108,176,0.35); }
+.btn-primary { display: inline-flex; align-items: center; gap: 8px; padding: 13px 26px; background: #d3e042; color: #000; border-radius: 10px; font-weight: 700; font-size: 0.92rem; transition: all 0.3s ease; box-shadow: 0 4px 20px rgba(120,120,120,1); }
 .btn-primary:hover { background: #3182ce; transform: translateY(-2px); box-shadow: 0 8px 25px rgba(43,108,176,0.5); }
 .btn-secondary { display: inline-flex; align-items: center; gap: 8px; padding: 13px 26px; background: transparent; color: #e2e8f0; border-radius: 10px; font-weight: 700; font-size: 0.92rem; border: 1px solid rgba(255,255,255,0.15); transition: all 0.3s ease; }
 .btn-secondary:hover { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.3); transform: translateY(-2px); }
-.btn-outline-blue { display: inline-flex; align-items: center; gap: 8px; padding: 13px 26px; background: transparent; color: #60a5fa; border-radius: 10px; font-weight: 700; font-size: 0.92rem; border: 1px solid rgba(96,165,250,0.3); transition: all 0.3s ease; }
+.btn-outline-blue { display: inline-flex; align-items: center; gap: 8px; padding: 13px 26px; background: transparent; color: #909b19; border-radius: 10px; font-weight: 700; font-size: 0.92rem; border: 1px solid rgba(96,165,250,0.3); transition: all 0.3s ease; }
 .btn-outline-blue:hover { background: rgba(96,165,250,0.08); border-color: rgba(96,165,250,0.5); transform: translateY(-2px); }
 
 /* Top Bar */
