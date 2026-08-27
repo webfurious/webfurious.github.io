@@ -308,9 +308,12 @@
     class="sf-feedback-form"
     name="earlyaccess-feedback"
     method="POST"
-    action="/feedback-thanks.html"
+    action="https://formspree.io/f/mlgzzawr"
+    id="sf-feedback-form"
   >
-    <input type="hidden" name="form-name" value="earlyaccess-feedback" />
+    <input type="hidden" name="_subject" value="StudioFlow Feedback" />
+    <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+    <p class="sf-form-error" id="sf-feedback-error" style="display:none; color:#f97316; font-size:0.85rem; margin:0;">Something went wrong sending your feedback. Please try again or email webfuriousdesigns@gmail.com directly.</p>
 
     <!-- Feedback type — styled radio tabs -->
     <div class="sf-field">
@@ -420,6 +423,33 @@
 
   typeRadios.forEach(radio => radio.addEventListener('change', updateBugFields));
   updateBugFields(); // run on load
+
+  // AJAX submit so we control the redirect (Formspree's _next redirect is a paid-plan feature)
+  const feedbackForm = document.getElementById('sf-feedback-form');
+  const feedbackError = document.getElementById('sf-feedback-error');
+  feedbackForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    feedbackError.style.display = 'none';
+    const submitBtn = feedbackForm.querySelector('.sf-submit');
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
+    try {
+      const response = await fetch(feedbackForm.action, {
+        method: 'POST',
+        body: new FormData(feedbackForm),
+        headers: { 'Accept': 'application/json' },
+      });
+      if (response.ok) {
+        window.location.href = 'feedback-thanks.html';
+      } else {
+        throw new Error('Form submission failed');
+      }
+    } catch (err) {
+      feedbackError.style.display = 'block';
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Submit Feedback →';
+    }
+  });
 </script>
         </div>
     </section>
