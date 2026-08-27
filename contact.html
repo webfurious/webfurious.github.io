@@ -8,19 +8,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/14615e9eac.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/e55901ee93.js" crossorigin="anonymous"></script>
     <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
 
+    <!-- Top Bar -->
     <div class="top-bar">
         <div class="container">
             <div class="top-bar-left">
-                <span><i class="fas fa-phone"></i> (815) 596-0713</span>
-                <span><i class="fas fa-clock"></i> Mon-Fri 9am-6pm</span>
+                <span><i class="fas fa-phone" style="margin-right:6px;"></i>(815) 596-0713</span>
+                <span><i class="fas fa-clock" style="margin-right:6px;"></i>Mon-Fri 9am-6pm</span>
             </div>
             <div class="top-bar-right">
-                <a href="https://www.facebook.com/share/1DnqJM4wCC/"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://github.com/webfurious-designs/StudioFlow"><i class="fab fa-github"></i></a>
+                <a href="https://www.facebook.com/share/1DnqJM4wCC/"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=""><i class="fa-brands fa-google-play"></i></a>
+              <a href="https://Github.com/webfurious"><i class="fa-brands fa-github"></i></a>
+              <a href="mailto:webfuriousdesigns@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+              <a href="https://github.com/webfurious/webfurious.github.io/discussions"><i class="fa-solid fa-comment"></i></a>
             </div>
         </div>
     </div>
@@ -90,9 +95,11 @@
   <p class="sf-eyebrow">Get in Touch</p>
   <h2>Let's Talk</h2>
   <p class="sf-subhead">Have a project in mind? A question about StudioFlow? Or just want to say hi — I'm all ears. I'll get back to you within one business day.</p>
-  <form class="sf-contact-form" name="contact" method="POST" action="/contact-thanks.html">
-    <input type="hidden" name="form-name" value="contact" />
+  <form class="sf-contact-form" name="contact" method="POST" action="https://formspree.io/f/mlgzzawr" id="sf-contact-form">
+    <input type="hidden" name="_subject" value="StudioFlow Website Contact" />
+    <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
     <p class="sf-honeypot"><label>Don't fill this out: <input name="bot-field" /></label></p>
+    <p class="sf-form-error" id="sf-contact-error" style="display:none; color:#f97316; font-size:0.85rem; margin:0;">Something went wrong sending your message. Please try again or email webfuriousdesigns@gmail.com directly.</p>
     <div class="sf-row">
       <div class="sf-field">
         <label for="c-name">Your Name</label>
@@ -178,8 +185,11 @@
                     <img src="img/header.png" alt="Webfurious Designs" />
                     <p>Professional design services for small businesses and individuals. Affordable prices, real results. Based in Rockford, IL.</p>
                     <div class="footer-social">
-                        <a href="https://webfurious-designs.bsky.social"><i class="fas fa-cloud"></i></a>
-                        <a href="https://github.com/webfurious-designs/StudioFlow"><i class="fab fa-github"></i></a>
+                        <a href="https://www.facebook.com/share/1DnqJM4wCC/"><i class="fa-brands fa-facebook-f"></i></a>
+                      <a href=""><i class="fa-brands fa-google-play"></i></a>
+                      <a href="https://Github.com/webfurious"><i class="fa-brands fa-github"></i></a>
+                      <a href="mailto:webfuriousdesigns@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                      <a href="https://Github.com/webfurious/webfurious.github.io/discussions"><i class="fa-solid fa-comment"></i></a>
                     </div>
                     <div class="payment-icons">
                         <img src="img/icons/payment-1.png" alt="Payment" />
@@ -252,8 +262,34 @@
         window.addEventListener('scroll', () => { document.getElementById('site-header').classList.toggle('scrolled', window.scrollY > 20); });
         const observer = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }); }, { threshold: 0.1 });
         document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // AJAX submit so we control the redirect (Formspree's _next redirect is a paid-plan feature)
+        const contactForm = document.getElementById('sf-contact-form');
+        const contactError = document.getElementById('sf-contact-error');
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            contactError.style.display = 'none';
+            const submitBtn = contactForm.querySelector('.sf-submit');
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending...';
+            try {
+                const response = await fetch(contactForm.action, {
+                    method: 'POST',
+                    body: new FormData(contactForm),
+                    headers: { 'Accept': 'application/json' },
+                });
+                if (response.ok) {
+                    window.location.href = 'contact-thanks.html';
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            } catch (err) {
+                contactError.style.display = 'block';
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Send Message →';
+            }
+        });
     </script>
     <script src="js/theme.js"></script>
 </body>
 </html>
-
