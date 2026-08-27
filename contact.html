@@ -90,11 +90,11 @@
   <p class="sf-eyebrow">Get in Touch</p>
   <h2>Let's Talk</h2>
   <p class="sf-subhead">Have a project in mind? A question about StudioFlow? Or just want to say hi — I'm all ears. I'll get back to you within one business day.</p>
-  <form class="sf-contact-form" name="contact" method="POST" action="https://formspree.io/f/mlgzzawr">
+  <form class="sf-contact-form" name="contact" method="POST" action="https://formspree.io/f/mlgzzawr" id="sf-contact-form">
     <input type="hidden" name="_subject" value="StudioFlow Website Contact" />
-    <input type="hidden" name="_next" value="https://webfurious.github.io/contact-thanks.html" />
     <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
     <p class="sf-honeypot"><label>Don't fill this out: <input name="bot-field" /></label></p>
+    <p class="sf-form-error" id="sf-contact-error" style="display:none; color:#f97316; font-size:0.85rem; margin:0;">Something went wrong sending your message. Please try again or email webfuriousdesigns@gmail.com directly.</p>
     <div class="sf-row">
       <div class="sf-field">
         <label for="c-name">Your Name</label>
@@ -254,6 +254,33 @@
         window.addEventListener('scroll', () => { document.getElementById('site-header').classList.toggle('scrolled', window.scrollY > 20); });
         const observer = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }); }, { threshold: 0.1 });
         document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // AJAX submit so we control the redirect (Formspree's _next redirect is a paid-plan feature)
+        const contactForm = document.getElementById('sf-contact-form');
+        const contactError = document.getElementById('sf-contact-error');
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            contactError.style.display = 'none';
+            const submitBtn = contactForm.querySelector('.sf-submit');
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending...';
+            try {
+                const response = await fetch(contactForm.action, {
+                    method: 'POST',
+                    body: new FormData(contactForm),
+                    headers: { 'Accept': 'application/json' },
+                });
+                if (response.ok) {
+                    window.location.href = 'contact-thanks.html';
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            } catch (err) {
+                contactError.style.display = 'block';
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Send Message →';
+            }
+        });
     </script>
     <script src="js/theme.js"></script>
 </body>
