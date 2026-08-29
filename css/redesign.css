@@ -1,6 +1,8 @@
 /* Webfurious Designs — 2026 redesign
    Ported from the /redesign-preview zo.space mockup. */
 
+html, body { margin: 0; padding: 0; background: #12171d; }
+
 .wf-redesign {
   --ink: #12171d;
   --ink-soft: #1a222b;
