@@ -7,261 +7,236 @@
     <title>StudioFlow — Business Management for Freelancers | Webfurious Designs</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500;1,9..144,600&family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/redesign.css">
     <script src="https://kit.fontawesome.com/14615e9eac.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/e55901ee93.js" crossorigin="anonymous"></script>
-    <link href="css/main.css" rel="stylesheet">
 </head>
-<body style="background: #060910;">
+<body>
+<div class="wf-redesign">
 
-    <!-- Top Bar -->
-    <div class="top-bar">
-        <div class="container">
-            <div class="top-bar-left">
-                <span><i class="fas fa-phone" style="margin-right:6px;"></i>(815) 596-0713</span>
-                <span><i class="fas fa-clock" style="margin-right:6px;"></i>Mon-Fri 9am-6pm</span>
-            </div>
-            <div class="top-bar-right">
-                <a href="https://www.facebook.com/share/1DnqJM4wCC/"><i class="fa-brands fa-facebook-f"></i></a>
-              <a href=""><i class="fa-brands fa-google-play"></i></a>
-              <a href="https://Github.com/webfurious"><i class="fa-brands fa-github"></i></a>
-              <a href="mailto:webfuriousdesigns@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-              <a href="https://github.com/webfurious/webfurious.github.io/discussions"><i class="fa-solid fa-comment"></i></a>
-            </div>
+    <div class="wf-grain"></div>
+
+    <div class="wf-ticker">
+      <div class="wf-ticker-track">
+        <div class="wf-ticker-set">
+          <span><i class="fas fa-phone"></i> (815) 596-0713</span>
+          <span class="wf-dot">✦</span>
+          <span><i class="fas fa-clock"></i> Mon–Fri 9am–6pm</span>
+          <span class="wf-dot">✦</span>
+          <span>Rockford, IL — Est. 2005</span>
+          <span class="wf-dot">✦</span>
+          <span>Design that actually works</span>
+          <span class="wf-dot">✦</span>
         </div>
+        <div class="wf-ticker-set">
+          <span><i class="fas fa-phone"></i> (815) 596-0713</span>
+          <span class="wf-dot">✦</span>
+          <span><i class="fas fa-clock"></i> Mon–Fri 9am–6pm</span>
+          <span class="wf-dot">✦</span>
+          <span>Rockford, IL — Est. 2005</span>
+          <span class="wf-dot">✦</span>
+          <span>Design that actually works</span>
+          <span class="wf-dot">✦</span>
+        </div>
+      </div>
     </div>
 
-    <header class="site-header" id="site-header">
-        <div class="container">
-            <div class="header-inner">
-                <div class="logo"><a href="index.html"><img src="img/header.png" alt="Webfurious Designs" /></a></div>
-                <nav class="nav-links">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="services.html">Services</a>
-                    <a href="StudioFlow.html" class="active">StudioFlow</a>
-                    <a href="contact.html">Contact</a>
-                    <a href="mailto:webfuriousdesigns@gmail.com" class="nav-cta">Get a Quote</a>
-                </nav>
-                <button class="nav-toggle" onclick="toggleMobileNav()">&#9776;</button>
-            </div>
+    <header class="wf-header">
+      <div class="wf-container wf-header-inner">
+        <a href="index.html" class="wf-wordmark">
+          <img src="img/redesign/webfurious-logo.png" alt="Webfurious Designs" class="wf-logo-img">
+        </a>
+        <nav class="wf-nav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="StudioFlow.html" class="wf-nav-active">StudioFlow</a>
+          <a href="contact.html">Contact</a>
+          <a href="mailto:webfuriousdesigns@gmail.com" class="wf-nav-cta">Get a Quote</a>
+        </nav>
+        <button class="wf-burger" aria-label="Menu"><span></span><span></span><span></span></button>
+      </div>
+      <div class="wf-mobile-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="StudioFlow.html">StudioFlow</a>
+        <a href="contact.html">Contact</a>
+        <a href="mailto:webfuriousdesigns@gmail.com">Get a Quote</a>
+      </div>
+    </header>
+
+    <section class="wf-sf-hero">
+      <div class="wf-container">
+        <img src="screenshots/StudioFlow_Logo.png" alt="StudioFlow Logo">
+        <h1>StudioFlow <em>Early Access</em></h1>
+        <p>The business management app built for freelancers. Get it on Google Play.</p>
+        <a href="index.html" class="wf-sf-back">← Back to Webfurious Designs</a>
+      </div>
+    </section>
+
+    <div class="wf-sf-feedback-link">
+      <div class="wf-container">
+        <p>Already an Early Access tester? <a href="feedback.html">Submit Feedback or Report a Bug →</a></p>
+      </div>
+    </div>
+
+    <section class="wf-features">
+      <div class="wf-container">
+        <div class="wf-section-head wf-on-ink" style="text-align:center; margin-bottom:0;">
+          <span class="wf-tag wf-tag-light">What You Get</span>
+          <h2 class="wf-h2 wf-h2-light">Everything you need to run your business.</h2>
         </div>
-        <div class="mobile-nav" id="mobile-nav">
+        <div class="wf-features-grid">
+          <div class="wf-feature-card">
+            <div class="wf-feature-icon">👥</div>
+            <h4>Client Management</h4>
+            <p>Manage all your clients in one place. Track contact info, status, communication history.</p>
+          </div>
+          <div class="wf-feature-card">
+            <div class="wf-feature-icon">📁</div>
+            <h4>Project Tracking</h4>
+            <p>Create projects with deadlines and budgets. Link tasks for progress tracking. Set fixed or hourly budgets.</p>
+          </div>
+          <div class="wf-feature-card">
+            <div class="wf-feature-icon">✅</div>
+            <h4>Task Management</h4>
+            <p>Break projects into tasks, set due dates, and track completion. Custom task types included.</p>
+          </div>
+          <div class="wf-feature-card">
+            <div class="wf-feature-icon">⏱️</div>
+            <h4>Time Tracking</h4>
+            <p>Start/stop timer or manually log hours. Automatic billable amount calculation feeds into invoices.</p>
+          </div>
+          <div class="wf-feature-card">
+            <div class="wf-feature-icon">🧾</div>
+            <h4>Invoicing</h4>
+            <p>Create professional invoices with itemized line items. Import logged time directly or add custom services. Track payment status.</p>
+          </div>
+          <div class="wf-feature-card">
+            <div class="wf-feature-icon">🗂️</div>
+            <h4>Products &amp; Services</h4>
+            <p>Build a reusable library of your services and rates. Pull them into any invoice with one tap.</p>
+          </div>
+          <div class="wf-feature-card">
+            <div class="wf-feature-icon">💰</div>
+            <h4>Financial Overview</h4>
+            <p>See your income, expenses, and net profit at a glance.</p>
+          </div>
+          <div class="wf-feature-card">
+            <div class="wf-feature-icon">✉️</div>
+            <h4>Proposals (Pro)</h4>
+            <p>Send professional quotes with secure client links. Clients accept or decline without logging in. Converts to invoice with one tap.</p>
+          </div>
+          <div class="wf-feature-card">
+            <div class="wf-feature-icon">🔁</div>
+            <h4>Recurring Invoices (Pro)</h4>
+            <p>Set up automatic invoice generation on weekly, monthly, or yearly schedules. Never miss a billing cycle.</p>
+          </div>
+          <div class="wf-feature-card">
+            <div class="wf-feature-icon">🖌️</div>
+            <h4>Invoice Branding (Pro)</h4>
+            <p>Add your logo and custom brand colors to exported PDF invoices.</p>
+          </div>
+          <div class="wf-feature-card">
+            <div class="wf-feature-icon">📌</div>
+            <h4>Project Pipeline (Pro)</h4>
+            <p>Visualize all your projects in a kanban-style pipeline view.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="wf-sf-pricing">
+      <div class="wf-container">
+        <span class="wf-tag wf-tag-light">Simple Pricing</span>
+        <h2 class="wf-h2 wf-h2-light">No ads. No hidden fees.</h2>
+        <p class="wf-sub" style="margin:0 auto;">No taking a cut of your invoices.</p>
+
+        <div class="wf-pricing-grid-2">
+          <div class="wf-pricing-card wf-plain">
+            <div class="wf-pricing-tier" style="color:var(--text-dim);">Free</div>
+            <div class="wf-pricing-amount">$0</div>
+            <div class="wf-pricing-desc">Real data, 3-record limit</div>
+            <ul>
+              <li>✓ Full feature access, real data</li>
+              <li>✓ 3-record limit on clients, projects &amp; invoices</li>
+              <li>✓ Unlimited tasks, expenses &amp; time tracking</li>
+              <li>✓ Preview invoice PDFs anytime</li>
+            </ul>
+            <div style="padding:12px; border-radius:6px; background:rgba(244,239,226,0.06); color:var(--text-dim); font-weight:600; text-align:center; font-size:0.9rem;">Always Free</div>
+          </div>
+
+          <div class="wf-pricing-card wf-featured">
+            <div class="wf-pricing-tier">Pro</div>
+            <div class="wf-pricing-amount">$4.99</div>
+            <div class="wf-pricing-desc">per month</div>
+            <ul>
+              <li>✓ Unlimited clients, projects &amp; invoices</li>
+              <li>✓ Proposals with client accept/decline</li>
+              <li>✓ Recurring invoice billing</li>
+              <li>✓ Invoice branding (logo &amp; colors)</li>
+              <li>✓ PDF export &amp; sharing</li>
+              <li>✓ Data export to CSV</li>
+              <li>✓ Task colors &amp; project pipeline view</li>
+              <li>✓ Deadline notifications</li>
+            </ul>
+            <a href="mailto:webfuriousdesigns@gmail.com?subject=StudioFlow%20Early%20Access" class="wf-btn wf-btn-gold" style="width:100%; justify-content:center;">Request Early Access</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="wf-footer">
+      <div class="wf-container">
+        <div class="wf-footer-top">
+          <div class="wf-footer-brand">
+            <a href="index.html" class="wf-wordmark wf-wordmark-footer">
+              <img src="img/redesign/webfurious-logo.png" alt="Webfurious Designs" class="wf-logo-img wf-logo-img-footer">
+            </a>
+            <p>Professional design services for small businesses and individuals.
+              Affordable prices, real results. Based in Rockford, IL.</p>
+            <div class="wf-footer-social">
+              <a href="https://www.facebook.com/share/1DnqJM4wCC/" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://Github.com/webfurious" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="mailto:webfuriousdesigns@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+              <a href="https://github.com/webfurious/webfurious.github.io/discussions" aria-label="Discussions"><i class="fa-solid fa-comment"></i></a>
+            </div>
+          </div>
+          <div class="wf-footer-col">
+            <h4>Navigation</h4>
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="services.html">Services</a>
             <a href="StudioFlow.html">StudioFlow</a>
             <a href="contact.html">Contact</a>
-        </div>
-    </header>
-
-    <!-- StudioFlow Content -->
-    <div style="max-width: 1100px; margin: 0 auto; padding: 40px 20px;">
-
-        <section id="studioflow" style="padding: 60px 20px; max-width: 1000px; margin: 0 auto; font-family: inherit; color: #e2e8f0;">
-
-          <!-- Hero -->
-          <div style="text-align: center; margin-bottom: 80px; position: relative; z-index: 1;">
-            <img style="width: 240px; height: auto; margin:auto; margin-bottom: 20px; filter: drop-shadow(0 0 15px rgba(255,255,255,0.1));" src="screenshots/StudioFlow_Logo.png" alt="StudioFlow Logo" />
-            <h1 style="font-size: 3rem; font-weight: 800; color: #fff; margin-bottom: 15px; letter-spacing: -1px;">StudioFlow Early Access</h1>
-            <p style="font-size: 1.25rem; max-width: 700px; margin: 0 auto 30px; line-height: 1.6; color: #94a3b8;">
-              Get it on Google Play.
-            </p>
-
-            <p style="font-size: 1rem; color: #a0aec0; margin-top: 20px;">
-              <a href="index.html" style="color: #60a5fa; text-decoration: none; font-weight: 600;">← Back to Webfurious Designs</a>
-            </p>
-            <!-- Feedback Link -->
-    <section style="padding: 40px 0 60px; background: #060910;">
-        <div class="container" style="text-align:center;">
-            <p style="color:#94a3b8; margin-top: 30px; font-size:0.95rem;">Already a Early Access tester? &nbsp;<a href="feedback.html" style="color:#60a5fa; font-weight:600; text-decoration:none;">Submit Feedback or Report a Bug &rarr;</a></p>
-        </div>
-    </section>
           </div>
-
-          <!-- Features -->
-          <div style="margin-bottom: 100px;">
-            <h2 style="text-align: center; font-size: 2.2rem; font-weight: 800; margin-bottom: 50px; color: #fff; letter-spacing: -0.5px;">Everything You Get</h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px;">
-
-              <div class="feature-card" style="padding: 30px; border-radius: 20px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); backdrop-filter: blur(10px); transition: all 0.3s ease;">
-                <div style="font-size: 2.5rem; margin-bottom: 15px;">👥</div>
-                <h4 style="margin: 0 0 12px; color: #fff; font-size: 1.25rem;">Client Management</h4>
-                <p style="font-size: 0.95rem; margin: 0; line-height: 1.6; color: #a0aec0;">Manage all your clients in one place. Track contact info, status, communication history.</p>
-              </div>
-
-              <div class="feature-card" style="padding: 30px; border-radius: 20px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); backdrop-filter: blur(10px); transition: all 0.3s ease;">
-                <div style="font-size: 2.5rem; margin-bottom: 15px;">📁</div>
-                <h4 style="margin: 0 0 12px; color: #fff; font-size: 1.25rem;">Project Tracking</h4>
-                <p style="font-size: 0.95rem; margin: 0; line-height: 1.6; color: #a0aec0;">Create projects with deadlines and budgets. Link tasks for progress tracking. Set fixed or hourly budgets.</p>
-              </div>
-
-              <div class="feature-card" style="padding: 30px; border-radius: 20px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); backdrop-filter: blur(10px); transition: all 0.3s ease;">
-                <div style="font-size: 2.5rem; margin-bottom: 15px;">✅</div>
-                <h4 style="margin: 0 0 12px; color: #fff; font-size: 1.25rem;">Task Management</h4>
-                <p style="font-size: 0.95rem; margin: 0; line-height: 1.6; color: #a0aec0;">Break projects into tasks, set due dates, and track completion. Custom task types included.</p>
-              </div>
-
-              <div class="feature-card" style="padding: 30px; border-radius: 20px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); backdrop-filter: blur(10px); transition: all 0.3s ease;">
-                <div style="font-size: 2.5rem; margin-bottom: 15px;">⏱️</div>
-                <h4 style="margin: 0 0 12px; color: #fff; font-size: 1.25rem;">Time Tracking</h4>
-                <p style="font-size: 0.95rem; margin: 0; line-height: 1.6; color: #a0aec0;">Start/stop timer or manually log hours. Automatic billable amount calculation feeds into invoices.</p>
-              </div>
-
-              <div class="feature-card" style="padding: 30px; border-radius: 20px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); backdrop-filter: blur(10px); transition: all 0.3s ease;">
-                <div style="font-size: 2.5rem; margin-bottom: 15px;">🧾</div>
-                <h4 style="margin: 0 0 12px; color: #fff; font-size: 1.25rem;">Invoicing</h4>
-                <p style="font-size: 0.95rem; margin: 0; line-height: 1.6; color: #a0aec0;">Create professional invoices with itemized line items. Import logged time directly or add custom services. Track payment status.</p>
-              </div>
-
-              <div class="feature-card" style="padding: 30px; border-radius: 20px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); backdrop-filter: blur(10px); transition: all 0.3s ease;">
-                <div style="font-size: 2.5rem; margin-bottom: 15px;">🗂️</div>
-                <h4 style="margin: 0 0 12px; color: #fff; font-size: 1.25rem;">Products & Services</h4>
-                <p style="font-size: 0.95rem; margin: 0; line-height: 1.6; color: #a0aec0;">Build a reusable library of your services and rates. Pull them into any invoice with one tap.</p>
-              </div>
-
-              <div class="feature-card" style="padding: 30px; border-radius: 20px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); backdrop-filter: blur(10px); transition: all 0.3s ease;">
-                <div style="font-size: 2.5rem; margin-bottom: 15px;">💰</div>
-                <h4 style="margin: 0 0 12px; color: #fff; font-size: 1.25rem;">Financial Overview</h4>
-                <p style="font-size: 0.95rem; margin: 0; line-height: 1.6; color: #a0aec0;">See your income, expenses, and net profit at a glance.</p>
-              </div>
-
-              <div class="feature-card" style="padding: 30px; border-radius: 20px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); backdrop-filter: blur(10px); transition: all 0.3s ease;">
-                <div style="font-size: 2.5rem; margin-bottom: 15px;">✉️</div>
-                <h4 style="margin: 0 0 12px; color: #fff; font-size: 1.25rem;">Proposals (Pro)</h4>
-                <p style="font-size: 0.95rem; margin: 0; line-height: 1.6; color: #a0aec0;">Send professional quotes with secure client links. Clients accept or decline without logging in. Converts to invoice with one tap.</p>
-              </div>
-
-              <div class="feature-card" style="padding: 30px; border-radius: 20px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); backdrop-filter: blur(10px); transition: all 0.3s ease;">
-                <div style="font-size: 2.5rem; margin-bottom: 15px;">🔁</div>
-                <h4 style="margin: 0 0 12px; color: #fff; font-size: 1.25rem;">Recurring Invoices (Pro)</h4>
-                <p style="font-size: 0.95rem; margin: 0; line-height: 1.6; color: #a0aec0;">Set up automatic invoice generation on weekly, monthly, or yearly schedules. Never miss a billing cycle.</p>
-              </div>
-
-              <div class="feature-card" style="padding: 30px; border-radius: 20px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); backdrop-filter: blur(10px); transition: all 0.3s ease;">
-                <div style="font-size: 2.5rem; margin-bottom: 15px;">🖌️</div>
-                <h4 style="margin: 0 0 12px; color: #fff; font-size: 1.25rem;">Invoice Branding (Pro)</h4>
-                <p style="font-size: 0.95rem; margin: 0; line-height: 1.6; color: #a0aec0;">Add your logo and custom brand colors to exported PDF invoices.</p>
-              </div>
-
-              <div class="feature-card" style="padding: 30px; border-radius: 20px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); backdrop-filter: blur(10px); transition: all 0.3s ease;">
-                <div style="font-size: 2.5rem; margin-bottom: 15px;">📌</div>
-                <h4 style="margin: 0 0 12px; color: #fff; font-size: 1.25rem;">Project Pipeline (Pro)</h4>
-                <p style="font-size: 0.95rem; margin: 0; line-height: 1.6; color: #a0aec0;">Visualize all your projects in a kanban-style pipeline view.</p>
-              </div>
-
-            </div>
+          <div class="wf-footer-col">
+            <h4>StudioFlow</h4>
+            <a href="StudioFlow.html#pricing">Pricing</a>
+            <a href="feedback.html">Submit Feedback</a>
+            <a href="privacy.html">Privacy Policy</a>
           </div>
-
-          <style>
-            .feature-card:hover {
-              transform: translateY(-5px);
-              background: rgba(255,255,255,0.06) !important;
-              border-color: rgba(96,165,250,0.4) !important;
-              box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5);
-            }
-          </style>
-
-          <!-- Pricing -->
-          <div id="pricing" style="margin-bottom: 80px; text-align: center;">
-            <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 15px; color: #fff;">Simple Pricing</h2>
-            <p style="color: #a0aec0; max-width: 600px; margin: 0 auto 50px; line-height: 1.7;">No ads. No hidden fees. No taking a cut of your invoices.</p>
-
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 25px; max-width: 800px; margin: 0 auto;">
-
-              <!-- Free -->
-              <div style="padding: 35px 25px; border-radius: 20px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); text-align: left;">
-                <div style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; color: #718096; margin-bottom: 10px; letter-spacing: 1px;">Free</div>
-                <div style="font-size: 2.5rem; font-weight: 800; color: #fff; margin-bottom: 5px;">$0</div>
-                <div style="color: #718096; font-size: 0.9rem; margin-bottom: 25px;">Real data, 3-record limit</div>
-                <ul style="list-style: none; padding: 0; margin: 0 0 30px; color: #a0aec0; font-size: 0.95rem; line-height: 2;">
-                  <li>✓ Full feature access, real data</li>
-                  <li>✓ 3-record limit on clients, projects & invoices</li>
-                  <li>✓ Unlimited tasks, expenses & time tracking</li>
-                  <li>✓ Preview invoice PDFs anytime</li>
-                </ul>
-                <div style="padding: 12px; border-radius: 10px; background: rgba(255,255,255,0.05); color: #718096; font-weight: 600; text-align: center; font-size: 0.9rem;">Always Free</div>
-              </div>
-
-              <!-- Pro -->
-              <div style="padding: 35px 25px; border-radius: 20px; background: rgba(43,108,176,0.15); border: 2px solid rgba(96,165,250,0.4); text-align: left; position: relative;">
-                <div style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; color: #60a5fa; margin-bottom: 10px; letter-spacing: 1px;">Pro</div>
-                <div style="font-size: 2.5rem; font-weight: 800; color: #fff; margin-bottom: 5px;">$4.99</div>
-                <div style="color: #718096; font-size: 0.9rem; margin-bottom: 25px;">per month</div>
-                <ul style="list-style: none; padding: 0; margin: 0 0 30px; color: #a0aec0; font-size: 0.95rem; line-height: 2;">
-                  <li>✓ Unlimited clients, projects & invoices</li>
-                  <li>✓ Proposals with client accept/decline</li>
-                  <li>✓ Recurring invoice billing</li>
-                  <li>✓ Invoice branding (logo & colors)</li>
-                  <li>✓ PDF export & sharing</li>
-                  <li>✓ Data export to CSV</li>
-                  <li>✓ Task colors & project pipeline view</li>
-                  <li>✓ Deadline notifications</li>
-                </ul>
-                <a href="#signup" style="display: block; padding: 12px; border-radius: 10px; background: #D3E042; color: #fff; font-weight: 700; text-align: center; font-size: 0.95rem; text-decoration: none; transition: 0.3s;">Get Started</a>
-              </div>
-
-            </div>
+          <div class="wf-footer-col">
+            <h4>Contact</h4>
+            <p><i class="fas fa-phone"></i> (815) 596-0713</p>
+            <p><i class="fas fa-envelope"></i> webfuriousdesigns@gmail.com</p>
+            <p><i class="fas fa-clock"></i> Mon–Fri 9am–6pm</p>
           </div>
-      </section>
-  </div>
-
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer-top">
-                <div class="footer-brand">
-                    <img src="img/header.png" alt="Webfurious Designs" />
-                    <p>Professional design services for small businesses and individuals.</p>
-                    <div class="footer-social">
-                        <a href="https://www.facebook.com/share/1DnqJM4wCC/"><i class="fa-brands fa-facebook-f"></i></a>
-                      <a href=""><i class="fa-brands fa-google-play"></i></a>
-                      <a href="https://Github.com/webfurious"><i class="fa-brands fa-github"></i></a>
-                      <a href="mailto:webfuriousdesigns@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-                      <a href="https://Github.com/webfurious/webfurious.github.io/discussions"><i class="fa-solid fa-comment"></i></a>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h4>Navigation</h4>
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="services.html">Services</a>
-                    <a href="StudioFlow.html">StudioFlow</a>
-                    <a href="contact.html">Contact</a>
-                    <a href="privacy.html">Privacy Policy</a>
-                    <a href="terms-of-service.html">Terms of Service</a>
-                </div>
-                <div class="footer-col">
-                    <h4>StudioFlow</h4>
-                    <a href="StudioFlow.html#pricing">Pricing</a>
-                    <a href="StudioFlow.html#signup">Get Early Access</a>
-                    <a href="privacy.html">Privacy Policy</a>
-                </div>
-                <div class="footer-col">
-                    <h4>Contact</h4>
-                    <p><i class="fas fa-phone"></i> (815) 596-0713</p>
-                    <p><i class="fas fa-envelope"></i> webfuriousdesigns@gmail.com</p>
-                    <p><i class="fas fa-clock"></i> Mon-Fri 9am-6pm</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>Copyright &copy; 2026 Webfurious Designs</p>
-                <div class="footer-bottom-links">
-                    <a href="privacy.html">Privacy Policy</a> |
-                    <a href="terms-of-service.html">Terms of Service</a>
-                </div>
-            </div>
         </div>
+        <div class="wf-footer-bottom">
+          <p>© 2026 Webfurious Designs — All Rights Reserved</p>
+          <div class="wf-footer-legal">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms-of-service.html">Terms of Service</a>
+          </div>
+        </div>
+      </div>
     </footer>
 
-    <script>
-        function toggleMobileNav() { 
-            document.getElementById('mobile-nav').classList.toggle('open'); 
-        }
-        
-        window.addEventListener('scroll', () => {
-            document.getElementById('site-header').classList.toggle('scrolled', window.scrollY > 20);
-        });
-    </script>
-    <script src="js/theme.js"></script>
+</div>
+    <script src="js/redesign.js"></script>
 </body>
 </html>
