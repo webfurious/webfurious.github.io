@@ -45,7 +45,7 @@ html, body { margin: 0; padding: 0; background: #12171d; }
 .wf-header.wf-scrolled { box-shadow: 0 8px 30px rgba(0,0,0,0.35); }
 .wf-header-inner { display: flex; align-items: center; justify-content: space-between; padding: 16px 28px; }
 .wf-wordmark { display: flex; flex-direction: column; line-height: 0.86; }
-.wf-logo-img { height: 46px; width: auto; display: block; }
+.wf-logo-img { height: 46px; width: auto; display: block; align-self: flex-start; object-fit: contain; }
 .wf-logo-img-footer { height: 52px; }
 .wf-wm-top { font-family: 'Fraunces', serif; font-weight: 600; font-style: italic; font-size: 1.5rem; color: var(--paper); }
 .wf-wm-bottom { font-family: 'Archivo', sans-serif; font-weight: 800; font-size: 0.72rem; letter-spacing: 5px; color: var(--gold); margin-left: 2px; }
@@ -251,7 +251,8 @@ html, body { margin: 0; padding: 0; background: #12171d; }
 
 @media (max-width: 900px) {
   .wf-story-grid, .wf-services-grid, .wf-contact-grid, .wf-svc-detail-grid { grid-template-columns: 1fr; }
-  .wf-skills-grid, .wf-svc-list-grid, .wf-pricing-grid { grid-template-columns: 1fr 1fr; }
+  .wf-skills-grid, .wf-svc-list-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .wf-pricing-grid { grid-template-columns: minmax(0, 1fr); }
   .wf-pricing-grid-2 { grid-template-columns: 1fr; }
 }
 
